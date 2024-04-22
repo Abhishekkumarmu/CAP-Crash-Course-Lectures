@@ -1,0 +1,454 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+   // Notes:-
+
+// Nested Loops
+// Introduction
+// Nested loops are loops within loops, allowing for more complex iterations over data structures. They are commonly used when working with multi-dimensional arrays or nested data structures like arrays of objects. Understanding nested loops is crucial for iterating through complex data structures and performing operations on their elements.
+
+// Detailed Explanation
+// Nested loops consist of one loop inside another loop. The inner loop will run completely for each iteration of the outer loop. This means that for each iteration of the outer loop, the inner loop will run to completion.
+
+// 2D Arrays
+// A 2D array is an array of arrays, where each element of the outer array is itself an array. This forms a grid-like structure where elements are arranged in rows and columns.
+
+// Array of Objects
+// An array of objects is an array where each element is an object. This is commonly used to represent a collection of related data, such as a list of products in an online store. Each object in the array may have multiple properties representing different attributes of the product.
+
+// Code Implementation | Examples
+// Nested Loops with 2D Arrays
+// Printing a 2D Matrix
+
+var matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+for (var i = 0; i < matrix.length; i++) {
+  for (var j = 0; j < matrix[i].length; j++) {
+    console.log(matrix[i][j]);
+  }
+}
+// Find sum of all elements in the 2D Array
+
+var matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+var sum = 0;
+
+for (var i = 0; i < matrix.length; i++) {
+  for (var j = 0; j < matrix[i].length; j++) {
+    sum += matrix[i][j];
+  }
+}
+
+console.log("Sum of all elements:", sum);
+
+// Nested loop with Array of Objects
+// Print the name and price of each products in the give array
+
+var products = [
+  { name: 'Product 1', price: 10 },
+  { name: 'Product 2', price: 20 },
+  { name: 'Product 3', price: 30 }
+];
+
+for (var i = 0; i < products.length; i++) {
+  console.log("Product Name:", products[i].name);
+  console.log("Price:", products[i].price);
+}
+// Finding Products with Price Less Than 20 in the given array
+
+var products = [
+  { name: 'Product 1', price: 10 },
+  { name: 'Product 2', price: 20 },
+  { name: 'Product 3', price: 30 }
+];
+
+console.log("Products with price less than 20:");
+
+
+for (var i = 0; i < products.length; i++) {
+  if (products[i].price < 20) {
+    console.log(products[i].name);
+  }
+}
+// Student Activites
+// Create an array of objects representing products with name and price , Use nested loops to filter and print products with prices between 15 and 25.
+
+var products = [
+  { name: 'Product 1', price: 10 },
+  { name: 'Product 2', price: 20 },
+  { name: 'Product 3', price: 30 }
+];
+
+console.log("Products with price between 15 and 25:");
+for (var i = 0; i < products.length; i++) {
+  if (products[i].price >= 15 && products[i].price <= 25) {
+    console.log(products[i].name);
+  }
+}
+
+// Conclusion
+
+// Nested loops are essential for working with complex data structures like 2D arrays and arrays of objects. They allow for efficient iteration and manipulation of elements within these structures. By understanding how to use nested loops effectively, programmers can write more versatile and powerful code.
+
+// Resources - Official Documentation and Other Resources
+
+// MDN Web Docs: Nested Loops
+// W3Schools: JavaScript Nested Loops
+// JavaScript.info: Nested Loops
+
+// HOFs & Callbacks
+// Sample Lecture Link
+// HOFs & Callbacks
+
+// Introduction
+// Higher-order functions (HOFs) and callbacks are fundamental concepts in JavaScript programming. Understanding them is crucial as they enable developers to write more concise, efficient, and flexible code. Higher-order functions are functions that operate on other functions, either by taking them as arguments or by returning them. Callbacks are functions passed as arguments to another function to be executed later. These concepts are essential for asynchronous programming, event handling, and functional programming paradigms.
+
+// Detailed Explanation
+// What is the concept? In JavaScript, functions are first-class citizens, meaning they can be treated like any other variable. Higher-order functions leverage this feature by accepting functions as parameters or returning functions as results. Callbacks, a specific type of higher-order function, are widely used in JavaScript for asynchronous operations, event handling, and functional composition.
+
+// Why is it useful? Higher-order functions and callbacks provide a powerful mechanism for abstraction and code reuse. They enable developers to write cleaner, more modular code by separating concerns and promoting functional programming principles. By passing functions as arguments, developers can create generic functions that can be customized for various use cases, enhancing code flexibility and maintainability.
+
+// Basics of Functions:
+// Function Statement:
+// The function statement declares a function. A declared function is “saved for later use”, and will be executed later, when it is invoked (called).
+
+function javascript(){
+		console.log("Welcome to JS")
+}
+
+javascript()
+
+// Function expression:
+// functions are like heart to JavaScript, beautiful feature of a function is that you can assign it to a variable.
+var b = function(){
+		console.log("Welcome to JS")
+}
+
+b()
+
+// Anonymous function :
+// A function without a name is called anonymous function
+// Anonymous functions are used as values , i.e. you can use it to assign it to some variables. In the above snippet the function which we assign to variable b is an anonymous function
+// Difference Between Parameters and Arguments :
+
+// Parameters are variables listed as a part of the function definition.
+
+// Arguments are values passed to the function when it is invoked.
+
+function sum( a, b, c ) {}; // a, b, and c are the parameters
+
+sum( 1, 2, 3 ); // 1, 2, and 3 are the arguments
+// Code Implementation | Examples
+// Think of vaccination scenario
+// Many People are queued up and as a doctor what would you tell your staff to do:
+// Everyone has a token of their number in the line. You go with a token 0 and match it with the first person and vaccinate him, then you scratch the 0 on your token and make it 1, then go to next person and vaccinate, and so on.
+// Go and vaccinate everyone in the line one by one.
+// Lets take array of persons
+
+var persons = ['Chandra', 'Varun', 'Nrupul', 'Prateek', 'Aman'];
+// Let’s write a function for vaccination
+function vaccinate(person) { 
+    console.log(person + 'has been vaccinated.')
+}
+
+// Instead of going to each and every person, lets use for loop
+
+for (var i = 0; i < persons.length; i++) {  
+    vaccinate(persons[i]); 
+    }
+
+// You can also use map function instead of for loop
+
+persons.map(vaccinate)
+
+// The surprising thing that happened is we passed a function name as an argument!
+// What is vaccinate here ? it’s a callback function
+// Callback functions:
+// let’s write a function for eatBreakfast
+
+function eatBreakfast(item){
+	console.log("I will eat"+" "+item +" "+ "as my breakfast")
+}
+
+eatBreakfast("idly")
+
+Output : I will eat idly as my breakfast
+
+// Now let’s to pass number as argument along with string
+
+function eatBreakfast(item,time){
+	console.log("I will eat"+" "+item +" "+ "as my breakfast"+"at"+" "+time)
+}
+
+eatBreakfast("idly",9)
+
+Output : I will eat idly as my breakfast at 9
+
+// Now let’s try to pass functions as argument along with strings and numbers
+
+function eatBreakfast(item,time){
+
+	console.log("I will eat"+" "+item +" "+ "as my breakfast"+"at"+" "+time)
+}
+
+function doBrush(){
+	console.log("First brush your teeth")
+}
+
+eatBreakfast("idly",9,doBrush)
+
+Output : I will eat idly as my breakfast at 9
+
+// We have passed function as argument but how to access callback function
+
+
+function eatBreakfast(item,time,doBrush){
+	doBrush()
+	console.log("I will eat"+" "+item +" "+ "as my breakfast"+"at"+" "+time)
+}
+
+function doBrush(){
+	console.log("First brush your teeth")
+}
+
+eatBreakfast("idly",9,doBrush)
+
+Output : 
+First brush your teeth
+I will eat idly as my breakfast at 9
+
+// forEach:
+// Lets take example of this sweets menu
+
+var sweets = ["kova","gulabjamun","laddu","mysorepak","badshaw"]
+// As a foodie, I wanted all of these items in my plate, so I will go to each and every dish and pick it up, and also I can use for loop for this
+var sweets = ["kova","gulabjamun","laddu","mysorepak","badshaw"]
+
+for (var i = 0; i < sweets.length; i++){
+  console.log(food_menu[i])
+}
+
+// Syntax of forEach
+var sweets = ["kova","gulabjamun","laddu","mysorepak","badshaw"]
+
+sweets.forEach(function (elem,index) {
+    console.log(elem)
+})
+
+Output : 
+kova
+gulabjamun
+laddu
+mysorepak
+badshaw
+
+// here elem is each sweet individually
+// index is index number.
+// Warning :
+// forEach has extra charges
+
+// To pack those sweets in a box, we need to pay extra charges
+
+var sweets = ["kova","gulabjamun","laddu","mysorepak","badshaw"]
+var box = []
+sweets.forEach(function (elem,index) {
+    box.push(elem)
+})
+
+console.log(box) //[ 'kova', 'gulabjamun', 'laddu', 'mysorepak', 'badshaw' ]
+
+// Here creating extra array is extra charge.
+// map:
+// map is similar to forEach, only difference is map doesnt have any additional charges
+
+var sweets = ["kova","gulabjamun","laddu","mysorepak","badshaw"]
+var output= sweets.map(function (elem,index) {
+    return elem
+})
+
+console.log(output)// [ 'kova', 'gulabjamun', 'laddu', 'mysorepak', 'badshaw' ]
+
+// map method will return you a box(array) along with sweets
+// forEach	map
+// Return value: undefined	Return value: newArray will be created
+// Original Array: not modified	Original Array: not modified
+// forEach method is Not chainable	map method is chainable
+
+// filter:
+// If you want only one sweet for eg:kova, then we will use filter
+// Filter also doesnt have any additional charges
+// if will return you a box(array) along with sweets
+
+var sweets = ["kova","gulabjamun","laddu","mysorepak","badshaw"]
+var output= sweets.filter(function (elem,index) {
+    return elem=="kova"
+})
+
+console.log(output) // ["kova"]
+
+// reduce:
+// The .reduce() method iterates through an array and returns a single value.
+// There are two scenearios
+// Without inital value
+// With inital value
+// How reduce() works without an initial value
+// The code below shows what happens if we call reduce() with an array and no initial value.
+
+const array = [15, 16, 17, 18, 19];
+
+array.reduce(function (acc, el) {
+  return acc+el;
+});
+
+// callback iteration	acc	current value(el)	acc+el (stores in acc)
+// first call	15	16	31
+// second call	31	17	48
+// third call	48	18	66
+// fourth call	66	19	85
+// How reduce() works with an initial value
+// Here we reduce the same array using the same algorithm, but with an initialValue  of 10passed the second argument to reduce()
+
+let array = [10, 16, 17, 18, 19];
+
+let addNums=function (acc, cv) {
+  return acc+cv;
+}
+
+array.reduce(addNums,10);
+
+// callback iteration	acc	current value(cv)	acc+cv (stores in acc)
+// first call	10	15	25
+// second call	25	16	41
+// third call	41	17	58
+// fourth call	58	18	76
+// fifth call	76	19	95
+// Sorting:
+// the sort() method is used to sort the elements of an array in place and returns the sorted array. The default sort order is built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+
+// Here is an example of using the sort() method to sort an array of numbers in ascending order:
+
+// Copy code
+
+let numbers = [4, 2, 9, 1, 3, 6];
+numbers.sort();
+console.log(numbers);  // [1, 2, 3, 4, 6, 9]
+
+// You can also pass a compare function as an argument to the sort() method to define a custom sort order. The compare function should take two arguments (a and b) and return a negative, zero, or positive value, depending on the arguments, like:
+
+// a negative value if a should be sorted lower than b,
+// a positive value if a should be sorted higher than b,
+// 0 if a and b are equal.
+// Here is an example of using a compare function to sort an array of objects by the value of their "age" property:
+
+let shapes = [
+  {sides: 4, color: 'red'},
+  {sides: 3, color: 'blue'},
+  {sides: 4, color: 'blue'},
+  {sides: 3, color: 'red'}
+];
+
+// Output: [
+//   {sides: 3, color: 'blue'},
+//   {sides: 4, color: 'blue'},
+//   {sides: 3, color: 'red'},
+//   {sides: 4, color: 'red'}
+// ]
+
+// Chaining
+// Till now, we’ve seen a few higher order functions which give us power to apply a logic using less lines of code, right?
+
+// What if I told you that is not all that JS provides us. We can even combine these higher order functions. Let’s solve a few problems and learn the concept of chaining through the problems.
+
+// method	Input	return value
+// forEach	array	undefined
+// map	array	array
+// filter	array	array
+// reduce	array	single value
+// Student Activities
+
+
+// Map Practice:
+
+const numbers = [1, 2, 3, 4, 5];
+
+function doubleNumbers(arr) {
+    return arr.map(num => num * 2);
+}
+
+console.log(doubleNumbers(numbers)); // Expected output: [2, 4, 6, 8, 10]
+
+// Reduce Practice:
+
+const numbers = [1, 2, 3, 4, 5];
+
+function calculateSum(arr) {
+    return arr.reduce((acc, curr) => acc + curr, 0);
+}
+
+console.log(calculateSum(numbers)); // Expected output: 15
+
+// Filter Practice:
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function filterEvenNumbers(arr) {
+    return arr.filter(num => num % 2 === 0);
+}
+
+console.log(filterEvenNumbers(numbers)); // Expected output: [2, 4, 6, 8, 10]
+
+
+// Map & Filter Combination:
+
+
+const words = ['apple', 'banana', 'pear', 'orange', 'grape'];
+
+function filterShortWords(arr) {
+    return arr.filter(word => word.length >= 5).map(word => word.toUpperCase());
+}
+
+console.log(filterShortWords(words)); // Expected output: ['APPLE', 'BANANA', 'ORANGE']
+
+// Reduce with Objects:
+
+const votes = [
+    { candidate: 'A', votes: 120 },
+    { candidate: 'B', votes: 85 },
+    { candidate: 'C', votes: 210 },
+    { candidate: 'D', votes: 150 }
+];
+
+function calculateTotalVotes(votes) {
+    return votes.reduce((acc, curr) => acc + curr.votes, 0);
+}
+
+console.log(calculateTotalVotes(votes)); // Expected output: 565
+
+// Conclusion
+// Higher-order functions (HOFs) and callbacks are essential concepts in JavaScript, enabling developers to write more expressive, modular, and reusable code. By mastering these concepts, developers can leverage the full power of functional programming and create elegant solutions to complex problems.
+
+// Resources - Official Documentation and Other Resources
+// MDN Web Docs: Callback Function
+// MDN Web Docs: Array.prototype.map()
+// MDN Web Docs: Array.prototype.filter()
+// MDN Web Docs: Array.prototype.reduce()
+// MDN Web Docs: Array.prototype.forEach()
+
+</script>
+</html> -->

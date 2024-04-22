@@ -1,0 +1,64 @@
+<!-- Media Queries
+Introduction:
+Media queries are what make modern responsive design possible. With them you can set different styling based on things like a users screen size, device capabilities or user preferences.
+What are media queries?
+A media query is a specific feature of CSS that lets you conditionally apply styling based on a media type, a media feature or both. You use them primarily to check the screen dimensions and apply CSS based on that, but media queries can do many other powerful things.
+
+Detailed Explanation
+What is the concept? - The Media query in CSS is used to create a responsive web design. It means that the view of a web page differs from system to system based on screen or media types. The breakpoint specifies for what device-width size, the content is just starting to break or deform. The CSS2 rule introduced different style rules for different media types. A media query is a specific feature of CSS that lets you conditionally apply styling based on a media type, a media feature or both. You use them primarily to check the screen dimensions and apply CSS based on that, but media queries can do many other powerful things. Media queries can be used to check many things:
+
+width and height of the viewport
+width and height of the device
+Orientation
+Resolution
+A media query consists of a media type that can contain one or more expressions that can be either true or false. The query’s result is true if the specified media matches the type of device the document is displayed on. If the media query is true then a style sheet is applied.
+
+Why is it useful? - Media queries enable developers to create websites that are optimized for various devices, including desktops, tablets, and smartphones. By applying different styles based on device characteristics, developers can ensure that content is displayed appropriately and maintains usability across different screen sizes and resolutions.
+
+Real-world examples or analogies - Think of media queries as adjustable eyeglasses that automatically adapt to different lighting conditions. Just as the glasses adjust their tint based on the surrounding light, media queries adjust the layout and styling of a website based on the device's characteristics, ensuring optimal readability and usability.
+
+Visual models -
+
+A media query is an expression that evaluates to either True or False.
+A media query consists of a test, followed by as many CSS rules as we want, with the rule block enclosed in a set of braces. If the test condition is false, the browser simply ignores the rule block and moves on.
+Syntax of Media Query
+media-query-anatomy.webp
+
+@media specifies media queries declaration.
+Media type specifies what type of media are we trying to target, In many cases, you’ll see a screenvalue used here, which makes sense since many of the media types we’re trying to match are devices with screens attached to them. It also includes
+all: Matches all devices
+print: Matches documents that are viewed in a print preview or any media that breaks the content up into pages intended to print.
+screen: Matches devices with a screen
+Media Feature defines what features we are trying to match it to.
+Desktop: (min-width:1024px)
+Tablet: (min-width:768px) and (max-width:1023px)
+Smartphone :(min-width:340px) and (max-width:767px)
+
+Let’s see how media query works by taking small example.
+In this example, we are just giving background color property to body, by default whatever we write is for large screens.
+Instructor Activity | Code Implementation | Examples
+
+
+Example 1: Basic Media Query
+ -->
+
+ @media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+
+
+<!-- In this example, the background color of the body changes to light blue when the screen width is 600 pixels or less.
+
+Example 2: Responsive Typography -->
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+}
+
+

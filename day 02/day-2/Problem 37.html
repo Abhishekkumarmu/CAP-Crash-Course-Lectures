@@ -1,0 +1,23 @@
+<!-- flex-grow
+In order to understand flex-grow property clearly, we will keep only 3 divs.
+
+flex-grow allows a flex item to grow if necessary. This property specifies what amount of remaining space inside the flex container the item should take up. All flex items have a flex-grow of zero by default. -->
+
+
+
+<style>
+    .box {
+        display: flex;
+     }
+   .box > div:first-child {
+        flex-grow: 1;
+     }
+		.box > div:nth-child(2){
+				flex-grow:1
+		}
+</style>
+<div class="box">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>

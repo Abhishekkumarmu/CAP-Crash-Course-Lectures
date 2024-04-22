@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+
+
+
+// Functions and Inbuilt function:
+// Introduction
+// Functions are a fundamental concept in programming that allow developers to encapsulate reusable pieces of code to perform specific tasks. They play a crucial role in making code more modular, readable, and maintainable. In this set of notes, we explore the concept of functions, their usage, and the importance of documentation in understanding built-in functions.
+
+// Detailed Explanation
+// What is the concept? Functions in programming are blocks of code designed to perform a specific task. They encapsulate logic and can accept input parameters and return output. Functions can be invoked (called) multiple times, enabling code reusability and modularity.
+
+// Why is it useful? Functions offer several benefits:
+
+// Modularity: Code is organized into manageable chunks, enhancing readability and maintenance.
+// Reusability: Functions can be called multiple times, reducing code duplication.
+// Abstraction: Developers can focus on what a function does rather than how it's implemented, promoting a higher level of abstraction.
+// Scoping: Functions create their own scope, preventing naming conflicts and promoting encapsulation. Real-world examples or analogies Just like a recipe in a cookbook, functions contain a set of instructions to accomplish a specific task. Each time you bake a cake, you follow the same recipe, emphasizing the reusability aspect of functions. Similarly, in an organization, different departments handle specific tasks (functions), such as HR for hiring, Finance for budgeting, etc.
+// Suppose , we have wrote the code for calculating the sum of two numbers, calculating the difference of two numbers and calculating the multiplication of two numbers in single file.
+
+// When I execute the code file, all the three code will execute but What if I want only to run Addition code or subtraction code only.
+
+// I need some tool through which I able to control the different block of code.
+
+// For Example :
+
+// In Amazon , there are different functionalities implemented like Showing products, Adding/Deleting to cart, Orders, perform payments, etc.
+
+// Every functionalities was written separately.
+// In Instagram, there are different functionalities like posting the image, commenting , chatting, etc.
+
+// For each functionality, their individual code is written.
+// Those code execution depends upon the button you are hitting
+// Thus , we will going to understand HOW TO CONTROL OUR CODE ?
+
+// Therefore to achieve that we have something known as functions.
+
+// Code Implementation | Examples
+// Code : Write three functions of above :
+
+// printInfo()
+// sum()
+// multiply()
+
+function printInfo()
+{
+	var name = "Shubham";
+	console.log(name, name.length);
+}
+	
+function sum()
+{
+	var a = 3;
+	var b = 5;
+	var sum = a + b;
+	console.log("Sum is ",sum);
+}
+
+function multiply()
+{
+	var x = 4;
+	var y = 8;
+	var multiply = x*y;
+	console.log(x*y);
+}
+
+printInfo();
+sum();
+multiply(); 
+
+
+// Passing Value Using Parameters
+// Code : Write 4 functions :
+
+// subtraction
+// division
+// modulus
+// addition
+
+
+
+
+function subtraction(x, y)
+{
+  var subtraction = x - y;
+
+  console.log(subtraction);
+}
+
+function division(e, c)
+{
+  var division = e/c;
+
+	console.log(division);
+}
+
+function modulus(t, q)
+{
+  var val = t%q;
+
+	console.log(val);
+}
+
+function addition(first,second)
+{
+  var third = 20;
+  var sum = first+second+third;
+
+  console.log(sum);
+}
+
+var a=2;
+var b=30;
+
+addition(a, b);
+subtraction(a, b);
+division(a, b);
+modulus(a, b);
+
+
+// Passing Value + Returning Value
+// Code : Write 4 functions :
+
+// subtraction
+// division
+// modulus
+// addition
+
+
+
+function subtraction(x, y)
+{
+  var subtraction = x - y;
+
+  return subtraction;
+}
+
+function division(e, c)
+{
+  var division = e/c;
+
+	return division;
+}
+
+function modulus(t, q)
+{
+  var val = t%q;
+
+	return val;
+}
+
+function addition(first,second)
+{
+  var third = 20;
+  var sum = first+second+third;
+
+  return sum;
+}
+
+var a=2;
+var b=30;
+
+var output_1 = addition(a, b);
+console.log("Addition",output_1);
+
+var output_2 = subtraction(a, b);
+console.log("Subtraction",output_2);
+
+var output_3 = division(a, b);
+console.log("Division",output_3);
+
+var output_4 = modulus(a, b);
+console.log("Modulus",output_4);
+
+
+// Code : Checking whether a number is even or not
+
+// Checking whether a number is even or not
+function checkEven(n)
+{
+  if(n%2 == 0)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+
+var n = 6;
+var z = checkEven(n);
+
+if(z == true)
+{
+  console.log(n,"is even");
+}
+
+
+// Use of Return
+// The output of one function can be used as input for other.
+// The result of sum is acting as input for square function
+// Code
+
+function add(a,b)
+{
+  var sum = a+b;
+  return sum;
+}
+
+function square(x)
+{
+  var y = x*x;
+  return y;
+}
+
+var a = 5;
+var b=15;
+
+var sum = add(a,b);
+var sqr = square(sum);
+console.log(sqr);
+
+
+// Student Activities
+// Code : Write 2 functions
+
+// sumOfN : Find sum from 1 to n
+// multiplyBy2 : multiple the value by 2
+
+
+
+function sumOfN(n)
+{
+  sum = 0;
+  for(i=1; i<=n; i++)
+  {
+    sum = sum + i;
+  }
+  console.log("Sum is ",sum);
+  
+  return sum;
+}
+
+function multiplyBy2(x)
+{
+  var output2 = x*2;
+  console.log(output2);
+}
+
+var n = 5;
+var output = sumOfN(n);
+multiplyBy2(output);
+
+
+// Conclusion
+// Functions are integral to programming, offering modularity, reusability, and abstraction. By encapsulating logic into functions, developers can create more organized and maintainable codebases. Additionally, understanding built-in functions through proper documentation is crucial for leveraging them effectively in development projects.
+
+// Resources - Official Documentation and Other Resources
+// MDN Documentation on Functions
+// Local Scope vs Global Scope
+// Introduction
+// In programming, understanding variable scope is crucial. Two primary scopes exist: local scope and global scope. Local variables are confined to the scope of the function in which they are defined, while global variables can be accessed from anywhere in the program.
+
+// Detailed Explanation
+// What is the concept?
+// Variable scope refers to the accessibility and lifetime of variables within a program. Local scope pertains to variables defined within a specific function, while global scope encompasses variables declared outside of any function.
+
+// Why is it useful?
+// Understanding variable scope helps prevent unintended side effects and promotes modular, maintainable code. Local variables encapsulate data within functions, reducing the risk of unintentional modifications. Global variables allow data sharing across functions but require careful management to avoid conflicts.
+
+// Real-world examples or analogies
+// Imagine a toolbox (global scope) shared by multiple workers (functions). Each worker has their own set of tools (local scope) that they use independently. While they can access tools from the toolbox, modifying them affects everyone, so they primarily use their own tools to avoid conflicts.
+
+// Simple Rule :
+// local variable has a scope only to its function
+// Global Variables can be accessed by any one.
+// According to the below code, the orphan child treated as Global Variable can be accessed by any of the function , those variables which defined inside functions can only be accessed only from the function
+
+// Code Implementation | Examples
+// **Code **
+
+function kishorilal_Family()
+{
+  var kishori_son = "chunnu";
+  console.log(kishori_son);
+  orphan_child = "laalu";
+}
+
+function badrilal_Family()
+{
+  var badrilal_son = "hari om";
+}
+
+function rajeshram_Family()
+{
+  var rajeshram_son = "munnu";
+}
+
+var orphan_child = "billu";
+kishorilal_Family();
+
+console.log(orphan_child);
+
+
+// Inbuilt Function
+// What is Documentation ?
+// Why we need Documentation ?
+// How it is helpful ?
+// How to use it ?
+// Introduce MDN docs
+// Student Activities
+// Problem 1
+//  Create a function to check if a number is Prime or Not
+
+function isPrime(num)
+{
+    var count = 0;
+    for(var i = 1; i<=num; i++)
+    {
+      if(num%i == 0)
+      {
+        count++;
+      }
+    }
+  
+
+    if(count==2)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+
+  }
+
+  var result = isPrime(5);
+  console.log(result);
+
+
+// Problem 2
+// Use the above function to print the Primes from 2 to a given limit
+
+function isPrime(num)
+{
+    var count = 0;
+    for(var i = 1; i<=num; i++)
+    {
+      if(num%i == 0)
+      {
+        count++;
+      }
+    }
+  
+
+    if(count==2)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+
+  }
+
+var limit = 100;
+
+for(var i = 2; i<=limit; i++)
+{
+  var result = isPrime(i);
+  if(result == true)
+  {
+    console.log(i,"is prime");
+  }
+}
+// Problem 3
+// Problem 3: Use the same function to print Non-Primes from 2 to a given limit
+
+function isPrime(num)
+{
+    var count = 0;
+    for(var i = 1; i<=num; i++)
+    {
+      if(num%i == 0)
+      {
+        count++;
+      }
+    }
+  
+
+    if(count==2)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+
+  }
+
+var limit = 100;
+
+for(var i = 2; i<=limit; i++)
+{
+  var result = isPrime(i);
+  if(result != true)
+  {
+    console.log(i,"is non prime");
+  }
+}
+
+// Problem 4
+// Problem 4: Write a function to check if the char is a small case or not
+
+function isSmallCase(x)
+{
+  var lower = "abcdefghijklmnopqrstuvwxyz";
+
+  for(var i=0; i<lower.length; i++)
+  {
+    if(x == lower[i])
+    {
+      return true;
+    }
+    
+  }
+
+  return false;
+}
+
+var result = isSmallCase("C");
+console.log(result);
+
+
+// Problem 5
+// Write a function to replace spaces in a given string with -
+
+function modifyString(str)
+{
+  var output = "";
+
+  for(var i = 0; i<str.length; i++)
+  {
+    if(str[i] == " ")
+    {
+      output = output+"-";
+    }
+    else
+    {
+      output = str;
+    }
+  }
+
+  return output;
+}
+
+var str = "Masai School";
+console.log(modifyString(str));
+
+
+// Conclusion
+// Understanding local and global variable scope is essential for writing clean, efficient code. Local variables provide encapsulation and prevent unintended modifications, while global variables facilitate data sharing across functions. Proper management of variable scope enhances code readability and maintainability.
+
+// Resources - Official Documentation and Other Resources
+// MDN Web Docs: Variable Scope
+// MDN Web Docs: Inbuilt Functions
+// Object Methods
+// Introduction
+// In JavaScript, objects are fundamental data structures used to represent entities, such as users, orders, and more, typically found in real-world scenarios. Object methods allow these objects to perform actions or behaviors, making them dynamic and interactive.
+
+// Detailed Explanation
+// What is the concept?
+// Object methods in JavaScript are functions that are defined as properties of an object. They enable objects to perform actions or tasks, encapsulating behaviors within the object itself.
+
+// Why is it useful?
+// Object methods provide a convenient way to organize and encapsulate related functionality within an object. They enhance code readability, maintainability, and reusability by associating behaviors directly with the object they operate on. This approach aligns with the principles of object-oriented programming.
+
+// Real-world examples or analogies
+// Consider an object representing a user profile. Using object methods, you can define behaviors such as logging in, logging out, updating profile information, or sending messages. These methods encapsulate the actions that a user can perform within the application.
+
+// Objects are usually created to represent entities of the real world, like users, orders and so on:
+
+// var user = { name: "John", age: 30 };
+
+// And, in the real world, a user can act: select something from the shopping cart, login, logout etc.
+
+// Actions are represented in JavaScript by functions in properties.
+
+// Method examples
+// Code Implementation | Examples
+// For a start, let’s teach the user to say hello:
+
+// `var user = { name: "John", age: 30 };
+
+// user.sayHi = function() { alert("Hello!"); };
+
+// user.sayHi(); // Hello!`
+
+// Here we’ve just used a Function Expression to create a function and assign it to the property user.sayHi of the object.
+
+// Then we can call it as user.sayHi(). The user can now speak!
+
+// A function that is a property of an object is called its method.
+
+// So, here we’ve got a method sayHi of the object user.
+
+// Of course, we could use a pre-declared function as a method, like this:
+
+// `var user = { // ... };
+
+// *// first, declare function sayHi() { alert("Hello!"); }
+
+// // then add as a method user.sayHi = sayHi;*
+
+// user.sayHi(); // Hello!`
+
+// Problem: Print Hello World using a Object Method print
+
+
+
+
+var details = {
+  name : "Shubham",
+  age : 31,
+
+  print : function(){
+            console.log("Hello world");
+          }
+};
+
+console.log(details.name);
+details.print();
+
+
+// Problem :
+
+
+var details = {
+  name : "Shubham",
+  age : 31,
+
+  print : function(x){
+            var y = x+2;
+            return y;
+          }
+};
+
+console.log(details.print(4));
+
+
+// Problem :
+
+
+var details = {
+  name : "Shubham",
+  age : 31,
+
+  print : function(name){
+            console.log("Hello",this.age,this.name);
+          }
+};
+
+var name = "Shyam";
+details.print(name);
+
+
+// Problem :
+
+var details = {
+  name : "Rajpal",
+  age : 1000,
+  hobbies : ["coding","music"],
+
+  print : function()
+          {
+            console.log("Hello",this.name);
+            console.log("My age is",this.age);
+            console.log("Hobbies are",this.hobbies.join(" "));
+          }
+}
+
+details.print();
+
+
+// Problem : Create two methods for the rectangle object
+// perimeter
+// area
+
+
+var rectangle = {
+  length : 30,
+  breadth : 40,
+
+  perimeter : function()
+              {
+                console.log(2*(this.length+this.breadth));
+              },
+
+  area : function()
+           {
+              console.log(this.length*this.breadth);
+            },
+
+};
+
+rectangle.perimeter();
+rectangle.area();
+
+
+
+// Problem : Calculate the total price with the given quantity and price
+
+
+var e_commerce = {
+  products : ["earphone","headphone","earpods"],
+  quantity : [4,3,2],
+  price : [700, 800, 1000],
+
+  total_price : function(){
+              var sum=0;
+              for(var i = 0;i<this.quantity.length;i++)
+              {
+                sum = sum + (this.quantity[i] * this.price[i]);
+              }
+              return sum;
+            }
+};
+
+console.log(e_commerce.total_price());
+
+
+// Problem : Convert to Array of Objects
+
+
+var products = ["macbook","iphone","ipad"];
+var prices = [500000, 40000,50000];
+
+var data = [];
+for(var i=0; i<products.length; i++)
+{
+
+  var obj = {};
+  // obj["name"] = products[i];
+  // obj["price"] = prices[i];
+  obj.name = products[i];
+  obj.price = prices[i];
+
+  data.push(obj);
+}
+
+console.log(data);
+
+
+// Student Activities
+// Problem: Create an object with the following functionality
+// Ability to add student details and 3 subject marks
+
+
+//Create an object with the following functionality
+//Ability to add student details and 3 subject marks
+
+var details = {
+
+  data : [],
+
+  addStudent : function(nam, math, sci, eng)
+              {
+                  var obj = {};
+                  obj.name = nam;
+                  obj.maths = math;
+                  obj.science = sci;
+                  obj.english = eng;
+
+                  this.data.push(obj);
+              }
+};
+
+details.addStudent("Shubham", 10, 20, 30);
+details.addStudent("Rahul", 15, 25, 35);
+
+console.log(details.data);
+
+
+// Problem:
+// Create a object method to find low score student
+
+
+var details = {
+
+  data : [],
+
+  addStudent : function(nam, math, sci, eng)
+              {
+                  var obj = {};
+                  obj.name = nam;
+                  obj.maths = math;
+                  obj.science = sci;
+                  obj.english = eng;
+
+                  this.data.push(obj);
+              },
+
+  lowScore : function(){
+
+              var lowStudent = null;
+              var lowTotal = null;
+
+              for(var i=0; i<this.data.length; i++)
+              {
+                var currStudent = this.data[i];
+                var total = currStudent.maths + currStudent.science + currStudent.english;
+
+                if(lowTotal == null || total<lowTotal)
+                {
+                  lowTotal = total;
+                  lowStudent = currStudent;
+                }
+
+              }
+
+              return lowStudent;
+
+  }
+
+};
+
+details.addStudent("Shubham", 10, 20, 30);
+details.addStudent("Rahul", 15, 25, 35);
+
+// console.log(details.data);
+console.log(details.lowScore());
+
+
+// Array Methods
+// Introduction
+// Arrays in programming are like containers that hold multiple values. They have built-in methods that allow you to perform various operations on the elements stored in the array. Here are some commonly used array methods along with examples and use cases:
+
+// Detailed Explanation
+// 1. push()
+// The push() method adds one or more elements to the end of an array and returns the new length of the array. It's like adding items to the end of a shopping cart.
+
+// Example:
+
+let fruits1 = ['apple', 'banana'];
+fruits1.push('orange');
+console.log(fruits1); // Output: ['apple', 'banana', 'orange']
+
+// Use case: Adding new items to a shopping cart.
+
+// 2. pop()
+// The pop() method removes the last element from an array and returns that element. It's like removing the last item from a to-do list.
+
+// Example:
+
+let fruits2 = ['apple', 'banana', 'orange'];
+let removedFruit2 = fruits2.pop();
+console.log(removedFruit2); // Output: 'orange'
+console.log(fruits2); // Output: ['apple', 'banana']
+
+// Use case: Removing the last item from a to-do list.
+
+// 3. shift()
+// The shift() method removes the first element from an array and returns that element. It also updates the indexes of the remaining elements. It's like removing the first person from a line.
+
+// Example:
+
+let fruits3 = ['apple', 'banana', 'orange'];
+let removedFruit3 = fruits3.shift();
+console.log(removedFruit3); // Output: 'apple'
+console.log(fruits3); // Output: ['banana', 'orange']
+
+// Use case: Removing the first item from a queue.
+
+// 4. unshift()
+// The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array. It also updates the indexes of the existing elements. It's like adding new people to the front of a line.
+
+// Example:
+
+let fruits4 = ['apple', 'banana'];
+fruits4.unshift('orange');
+console.log(fruits4); // Output: ['orange', 'apple', 'banana']
+
+// Use case: Adding new items to the beginning of a list.
+
+// 5. concat()
+// The concat() method combines two or more arrays and returns a new array. It's like merging multiple lists into one.
+
+// Example:
+
+
+
+let fruits5 = ['apple', 'banana'];
+let moreFruits5 = ['orange', 'grape'];
+let allFruits5 = fruits5.concat(moreFruits5);
+console.log(allFruits5); // Output: ['apple', 'banana', 'orange', 'grape']
+
+// Use case: Merging multiple arrays into one.
+
+// 6. slice()
+// The slice() method extracts a section of an array and returns a new array. It takes two arguments: the start index (inclusive) and the end index (exclusive). It's like cutting out a specific portion from a cake.
+
+// Example:
+
+let fruits6 = ['apple', 'banana', 'orange', 'grape'];
+let citrusFruits6 = fruits6.slice(1, 3);
+console.log(citrusFruits6); // Output: ['banana', 'orange']
+
+// Use case: Selecting a specific range of elements from an array.
+
+// 7. indexOf()
+// The indexOf() method returns the first index at which a given element can be found in an array, or -1 if it is not present. It's like finding the position of a specific item in a grocery list.
+
+// Example:
+
+let fruits7 = ['apple', 'banana', 'orange'];
+let indexOfBanana7 = fruits7.indexOf('banana');
+console.log(indexOfBanana7); // Output: 1
+
+// Use case: Finding the position of a specific item in an array.
+
+// 8. includes()
+// The includes() method checks if an array includes a certain element and returns true or false. It's like checking if a specific ingredient exists in a recipe.
+
+// Example:
+
+let fruits8 = ['apple', 'banana', 'orange'];
+let includesBanana8 = fruits8.includes('banana');
+console.log(includesBanana8); // Output: true
+
+// Use case: Checking if a value exists in an array.
+
+// 9. join()
+// The join() method joins all elements of an array into a string, using a specified separator. It's like creating a comma-separated list from a list of items.
+
+// Example:
+
+let fruits9 = ['apple', 'banana', 'orange'];
+let fruitString9 = fruits9.join(', ');
+console.log(fruitString9); // Output: 'apple, banana, orange'
+
+// Use case: Creating a comma-separated list from an array.
+
+// 10. reverse()
+// The reverse() method reverses the order of the elements in an array. It's like flipping a deck of cards.
+
+// Example:
+
+let fruits10 = ['apple', 'banana', 'orange'];
+fruits10.reverse();
+console.log(fruits10); // Output: ['orange', 'banana', 'apple']
+
+// Use case: Reversing the order of elements in an array.
+
+// These are just a few examples of the many array methods available in JavaScript. By understanding and utilizing these methods, you can perform a wide range of operations on arrays to manipulate and extract data efficiently.
+
+// 11. splice()
+// The splice() method changes the contents of an array by removing, replacing, or adding elements. It takes three parameters: the start index, the number of elements to remove, and optional elements to add. It's like modifying a specific portion of an array.
+
+// Example:
+
+let fruits11 = ['apple', 'banana', 'orange', 'grape'];
+fruits11.splice(1, 2, 'kiwi', 'mango');
+console.log(fruits11); // Output: ['apple', 'kiwi', 'mango', 'grape']
+
+// Use case: Modifying specific elements within an array.
+
+// The splice() method is a powerful tool for manipulating arrays and allows for flexible modifications to the array's content.
+
+// More Examples:
+// Consider the following array:
+
+let fruits12 = ['apple', 'banana', 'orange', 'grape'];
+
+// 1 Removing Elements:
+// To remove elements from the array, specify the start index and the number of elements to remove. For example, to remove 'banana' and 'orange' from the array:
+
+fruits12.splice(1, 2);
+console.log(fruits12); // Output: ['apple', 'grape']
+
+// 2 Replacing Elements:
+// To replace elements in the array, specify the start index, the number of elements to remove, and the elements to add. For example, to replace 'banana' and 'orange' with 'kiwi' and 'mango':
+
+fruits.splice(1, 2, 'kiwi', 'mango');
+console.log(fruits); // Output: ['apple', 'kiwi', 'mango', 'grape']
+
+// 3 Adding Elements:
+// To add elements to the array without removing any existing elements, specify the start index as the length of the array and provide the elements to add. For example, to add 'watermelon' and 'cherry' to the end of the array:
+
+fruits.splice(fruits.length, 0, 'watermelon', 'cherry');
+console.log(fruits); // Output: ['apple', 'kiwi', 'mango', 'grape', 'watermelon', 'cherry']
+
+// Use Cases:
+// Modifying Specific Elements:
+// splice() allows you to modify specific elements within an array. For example, you can replace an element at a certain index or remove a range of elements.
+
+// Use Case: Imagine you have an array of days of the week, and you want to replace 'Wednesday' with 'Hump Day':
+
+let daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+daysOfWeek.splice(2, 1, 'Hump Day');
+console.log(daysOfWeek); // Output: ['Monday', 'Tuesday', 'Hump Day', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+// 2 Dynamic Array Manipulation:
+// splice() is useful when you need to dynamically manipulate the contents of an array based on certain conditions or user interactions.
+
+// Use Case: Let's say you have a to-do list stored in an array, and you want to allow users to mark tasks as complete and remove them from the list:
+
+let toDoList = ['Task 1', 'Task 2', 'Task 3', 'Task 4'];
+let completedTaskIndex = 1;
+toDoList.splice(completedTaskIndex, 1);
+console.log(toDoList); // Output: ['Task 1', 'Task 3', 'Task 4']
+
+// 3 Inserting Elements at Specific Positions:
+// splice() can be used to insert elements at specific positions within an array.
+
+// Use Case: Suppose you have an array of numbers, and you want to insert a new number at the beginning of the array:
+
+let numbers = [2, 3, 4, 5];
+numbers.splice(0, 0, 1);
+console.log(numbers); // Output: [1, 2, 3, 4, 5]
+
+// 4 Splitting an Array into Multiple Arrays:
+// By using splice() creatively, you can split an array into multiple arrays based on certain conditions or criteria.
+
+// Use Case: Let's say you have an array of mixed values, and you want to split it into separate arrays for numbers and strings:
+
+// let mixedArray = [1, 'apple', 2, 'banana', 3, 'orange'];
+// let numbersArray = mixedArray.splice(0, mixedArray.findIndex(item => typeof item !== 'number'));
+// console.log(numbersArray); // Output: [1]
+// console.log(mixedArray); // Output: ['apple', 2, 'banana', 3, 'orange']
+
+// These are just a few examples of how you can use the splice() method to modify, replace, and add elements within an array. The flexibility of splice() makes it a powerful tool for array manipulation.
+
+// Code Implementation | Examples
+// Use above mentioned examples.
+// Student Activities
+// Challenge 1: Array Sum Write a function called arraySum that takes an array of numbers as input and returns the sum of all the numbers in the array.
+// Challenge 2: Array Filter Write a function called filterGreaterThanTarget that takes an array of numbers and a target value as input, and returns a new array containing only the numbers that are greater than the target value.
+// Challenge 3: Array Average Write a function called arrayAverage that takes an array of numbers as input and returns the average of all the numbers in the array.
+// Challenge 4: Array Intersection Write a function called arrayIntersection that takes two arrays as input and returns a new array containing only the elements that are present in both arrays.
+// Challenge 5: Array Sorting Write a function called sortArrayAlphabetically that takes an array of strings as input and returns a new array with the strings sorted in alphabetical order.
+// Coding Challenges Solutions
+
+// Activity 1 :
+
+// //Array Sum
+function arraySum(numbers) {
+  return numbers.reduce((sum, num) => sum + num, 0);
+}
+
+
+// Activity 2 :
+
+//Array Filter
+function filterGreaterThanTarget(numbers, target) {
+  return numbers.filter(num => num > target);
+}
+
+
+// ​Activity 3 :
+
+// Array Average
+function arrayAverage(numbers) {
+  if (numbers.length === 0) {
+    return 0;
+  }
+  const sum = numbers.reduce((acc, num) => acc + num, 0);
+  return sum / numbers.length;
+}
+
+
+// ​Activity 4 :
+
+//Array Intersection
+function arrayIntersection(arr1, arr2) {
+  return arr1.filter(value => arr2.includes(value));
+}
+// ​Activity 5 :
+
+//Array Sorting
+function sortArrayAlphabetically(strings) {
+  return strings.sort();
+}
+
+
+// Conclusion
+// Arrays in programming are containers for multiple values, offering built-in methods for various operations. Methods like push() add elements to the end, pop() removes the last element, shift() removes the first, and unshift() adds to the beginning. Other methods like concat() merge arrays, slice() extract portions, indexOf() finds elements, includes() checks for existence, join() creates strings, and reverse() reverses the array. Additionally, splice() modifies arrays by removing, replacing, or adding elements. Coding challenges include tasks like summing array elements, filtering based on a target, finding averages, intersecting arrays, and sorting alphabetically.
+// Resources - Official Documentation and Other Resources
+// MDN Web Docs: Arrays
+// JavaScript Array Methods Tutorial
+// Array Methods in JavaScript
+// Interview Questions
+// What are functions in JavaScript, and why are they important in programming?
+// Explain the concept of local scope and global scope in JavaScript variables. How do they differ?
+// Why is it beneficial to use functions in programming? Discuss some advantages.
+// How do you define a function in JavaScript? Provide examples of both named and anonymous functions.
+// What is the difference between parameters and arguments in a function? Explain with examples.
+// Solutions :
+// Solution: Functions in JavaScript are blocks of reusable code designed to perform specific tasks. They are crucial in programming for promoting code modularity, reusability, and abstraction.
+
+// Solution: Local scope refers to variables defined within a specific function, accessible only within that function. Global scope includes variables declared outside of any function, accessible from anywhere in the program.
+
+// Solution: Functions offer benefits such as modularity, reusability, abstraction, and scoping. They help organize code into manageable chunks, prevent code duplication, and enhance maintainability.
+
+// Solution: Functions in JavaScript can be defined using the function keyword followed by the function name, parameters (if any), and function body. Examples: Named function:
+
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+
+
+// Anonymous function:
+
+var greet = function(name) {
+    console.log("Hello, " + name + "!");
+};
+
+
+//5 Solution: Parameters are placeholders in the function definition, while arguments are actual values passed to the function during invocation. Example of parameters:
+
+
+function add(x, y) {
+    return x + y;
+}
+
+
+// Example of arguments:
+
+var result = add(3, 5);
+
+
+// Interview Questions ( objects & methods)
+// What are object methods in JavaScript, and why are they important in programming?
+// Explain the syntax for defining object methods in JavaScript. Provide an example.
+// How do object methods enhance code organization and maintainability in JavaScript?
+// Describe a real-world scenario where object methods would be beneficial.
+// What is the purpose of the this keyword inside object methods? How does it work?
+// Can you demonstrate how to call an object method and access its properties within the method?
+// Solutions:
+
+// 1 Solution: Object methods in JavaScript are functions that are defined as properties of an object. They allow objects to perform actions or tasks, encapsulating behaviors within the object itself. Object methods are crucial for making objects dynamic and interactive in applications.
+
+// 2 Solution: Syntax for defining object methods:
+
+var obj = {
+  methodName: function() {
+    // Method body
+  }
+};
+//Example:
+
+var user = {
+  name: "John",
+  greet: function() {
+    console.log("Hello, " + this.name + "!");
+  }
+};
+
+
+// 3 Solution: Object methods enhance code organization and maintainability by associating related functionality directly with the object it operates on. This approach improves readability and makes it easier to understand and modify the code.
+
+// 4 Solution: In a customer relationship management (CRM) system, you can have an object representing a customer with methods like updateProfile(), placeOrder(), and viewOrders(). These methods encapsulate customer-related actions, making the codebase more organized and modular.
+
+// 5 Solution: The this keyword inside object methods refers to the current object instance on which the method is being called. It allows methods to access and operate on the properties of the object they belong to dynamically.
+
+// 6 Solution: Example of calling an object method and accessing its properties within the method:
+
+var user = {
+  name: "John",
+  greet: function() {
+    console.log("Hello, " + this.name + "!");
+  }
+};
+
+user.greet(); // Output: Hello, John!
+
+//In this example, this.name refers to the name property of the user object, and it gets dynamically replaced with the actual value when the method is called.
+
+
+</script>
+</html>

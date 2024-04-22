@@ -1,0 +1,18 @@
+-html is gonna be collection of elements or tags
+-every html tags are gonna have attributes, attributes=""
+
+-100 > 100> 10> 1> 0
+-inline style>id>class>tag>universal
+-SICTU=> style id class tag universal
+-combinator=> descendent child general sibling adjacent sibling
+
+<div> 
+<p></p>
+<p></p>
+
+<div>
+<h2></h2>
+
+
+</div>
+</div>

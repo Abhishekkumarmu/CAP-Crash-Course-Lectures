@@ -1,0 +1,43 @@
+<!-- CSS Grid
+Introduction
+The Grid model allows you to layout the content of your website. Not only that, it helps you create the structures you need for building responsive websites for multiple devices. This means your site will look good on desktop, mobile, and tablet.
+
+Detailed Explanation
+What is the concept? -CSS Grid Layout is a layout model that divides the space of a web page into rows and columns, forming a grid structure. It allows precise control over the placement and sizing of elements within the grid, enabling developers to create sophisticated layouts without relying on floats or positioning.
+Instructor Activity | Code Implementation | Examples
+Basic Grid : -->
+
+
+<style>
+    #container {
+      display: grid;
+    }
+          #container > div {
+      padding:20px;
+              font-size:20px;
+              color:white;
+    }
+          #container > div:nth-child(1) {
+      background-color: cornsunflowerblue;
+    }
+          #container > div:nth-child(2) {
+      background-color: crimson;
+    }
+          #container > div:nth-child(3) {
+      background-color: olivegreen;
+    }
+          #container > div:nth-child(4) {
+      background-color: teal;
+    }
+          
+          
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>    
+      </div>
+</body>

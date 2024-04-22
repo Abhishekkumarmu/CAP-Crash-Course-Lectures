@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        border: 6px solid black;
+        display: flex;
+      }
+      .container > div {
+        color: white;
+        font-size: 25px;
+        padding: 15px;
+        text-align: center;
+      }
+      #item1 {
+        background-color: cadetblue;
+				order:0  /* ==> default */
+				/* ***keep order : 1 and show the output*** */
+      }
+      #item2 {
+        background-color: coral;
+				/* ***keep order : 2 and show the output*** */
+      }
+      #item3 {
+        background-color: darkgoldenrod;
+      }
+      #item4 {
+        background-color: darkcyan;
+      }
+      #item5 {
+        background-color: darkmagenta;
+      }
+      #item6 {
+        background-color: darkolivegreen;
+      }
+      #item7 {
+        background-color: darksalmon;
+      }
+      #item8 {
+        background-color: deepskyblue;
+      }
+      #item9 {
+        background-color: darkslategrey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="item1">Item 1</div>
+      <div id="item2">Item 2</div>
+      <div id="item3">Item 3</div>
+      <div id="item4">Item 4</div>
+      <div id="item5">Item 5</div>
+      <div id="item6">Item 6</div>
+      <div id="item7">Item 7</div>
+      <div id="item8">Item 8</div>
+      <div id="item9">Item 9</div>
+    </div>
+  </body>
+</html>

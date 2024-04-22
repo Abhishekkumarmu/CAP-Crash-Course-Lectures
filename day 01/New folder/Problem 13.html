@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Webpage Layout</title>
+    <style>
+        /* Tag Selector */
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+        
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+        
+        /* ID Selector */
+        #header {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        /* Descendant Selector */
+        article p {
+            font-style: italic;
+        }
+        
+        /* Child Selector */
+        ul > li {
+            list-style-type: square;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Student Activities
+    Selector Application Challenge: Create a webpage layout with various HTML elements, such as headings, paragraphs, lists, and divs. Apply different CSS selectors to style each element uniquely, showcasing your understanding of selector specificity.
+    Solution
+ -->
+
+    <!-- Header with ID selector -->
+    <header id="header">Welcome to My Website</header>
+    
+    <!-- Paragraph with Tag selector -->
+    <p>This is a paragraph styled with a tag selector.</p>
+    
+    <!-- Paragraph with Class selector -->
+    <p class="highlight">This paragraph has a highlight class.</p>
+    
+    <!-- Article with Descendant selector -->
+    <article>
+        <p>This paragraph is within an article and styled with a descendant selector.</p>
+    </article>
+    
+    <!-- Unordered list with Child selector -->
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+</body>
+</html>
+

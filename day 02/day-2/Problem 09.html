@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .box {
+        display: flex;
+        background-color: #c3a7a7;
+        padding: 10px;
+        flex-direction:column-reverse
+      }
+      .box>div {
+        padding: 30px;
+        font-size: 30px;
+      }
+      .box > div:nth-child(1) {
+        background-color:teal;
+      }
+      .box > div:nth-child(2) {
+        background-color: orange;
+      }
+      .box > div:nth-child(3) {
+        background-color: rgb(76, 76, 212);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>
+

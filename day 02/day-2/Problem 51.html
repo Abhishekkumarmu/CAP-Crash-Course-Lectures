@@ -1,0 +1,44 @@
+<!-- This repeat will work only if the size of all the columns is same or size of all rows is same. What does that mean? That means grid-template-columns: 100px 100px 100px, then only it’ll work. If the grid-template-columns: 200px 100px 50px is not there, then repeat won’t work.
+
+Units of grid-template-columns:
+ -->
+
+<!-- 
+ **Pixels**
+  grid-template-columns: 100px 100px or repeat(2,100px)
+
+**Percentages**
+  grid-template-columns: 50% 50% or repeat(2,50%)
+  // each column will take 50% width in reference to its parent
+
+**Fractions
+	*If I want to divide 100% to 3 percentages => 33.33%, 33.33% , 33.33%
+	The same output can be achieved by saying => 100 => 1fr, 1fr, 1fr 
+	where fr is	fraction.***
+	grid-template-columns:repeat(3,33.33%) or 1fr 1fr 1fr or repeat(3,1fr)
+  // each column will take 1 fraction width in reference to its parent
+
+---------------------------------------------------------------------------------------------- -->
+
+
+<style>
+    #container {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: 100px 100px;
+      gap:20px 20px
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+</body>
+
+

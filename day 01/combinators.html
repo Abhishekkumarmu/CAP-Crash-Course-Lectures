@@ -1,0 +1,52 @@
+<html>
+    <title>
+        Larning Combinators
+    </title>
+    <style>
+        /* .container h2{
+            color: red;
+        }
+        .container p{
+            color: blue
+        }
+        .container>h2{
+            color: violet;
+        }
+        .container>div>p{
+            color: green;
+        }
+        .container>div>div>p{
+            color:blueviolet
+        } */
+
+        /* .container>div>h2~p{
+            color: blue;
+        }
+         */
+
+         .container>div>h2+p{
+            color: blueviolet;
+         }
+    </style>
+    <body>
+        <div class="container">
+            <h2>heading2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+            <div>
+                <h2>heading-2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                <div>
+                    <h2> heading--2</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus odio vitae assumenda esse iure necessitatibus excepturi voluptatibus? Eius ex unde nemo quod quae tempora quibusdam veniam commodi placeat facere. Fugiat vel illum odio, nulla quasi, eos cupiditate unde incidunt nisi ut amet assumenda autem. Fugit ab necessitatibus quasi blanditiis libero cumque corrupti consectetur ad.</p>
+            </div>
+
+          
+
+        </div>
+    </body>
+</html>

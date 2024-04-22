@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+
+// day-3
+// Notes:- :-
+
+// Javascript
+// Concept Covered
+// variables - var, let, const
+// data types
+// number
+// string
+// boolean
+// undefined
+// null
+// object
+// arrays
+// Operators
+// Mathematical operator
+// Comparision operator
+// Conditional statements
+// Logical operators
+// Loops
+// While loop
+// For loop
+// Arrays
+// Syntax
+// Iteration
+// Accessing and Manipulating
+// Strings
+// Syntax
+// Iteration
+// Accessing and Manipulating
+// Functions
+// Variables
+// Let's try to understand with a story - There was a child who once decided to leave his home and move to some different place. He does his packing. - There was a lot of stuff which needs to be packed. So, What he did, He arrange some boxes and In each box, he used to put some set of things Forex: Pictures, Shoes, Shirts, pillows, books, toys, etc.
+// Untitled 5.png
+
+// For Identification, He marked each box with a name Like a box containing pictures have the name pictures, the box which contains books marked as books, etc.
+// We relate this story with the concept of variables, The boxes are considered as variables where you can put your set of things.
+// Untitled 6.png
+
+// The variable is storage locations with assigned names.
+// It is used to hold data which you can choose later.
+// Need of Variable
+// Different customers who log in to Amazon, Flipkart, or Facebook should see their name on the top, not a fixed name.
+// The variable "custName" can be used to store the customer's name.
+// Untitled 7.png
+
+// It is like a box holding different values depending on who is visiting and logged in to the website.
+// In the frontend, Using Forms we use to take the values for different variables like Facebook signup form carrying different variables like name, age, etc.
+// Apart from the customer's name,  a website may also need to know customer's age. This would be another variable "custAge".
+
+// While custAge is also a variable but it holds a number, not a word (called a string in JS). Variables can have different "data types".
+
+// Student Activities
+// One common example could be: Aadhaar card number. Its full of numbers but their “numerical value” is not how its used. We dont say my Aadhaar number is "5 billion, 350 million …." We say its "5350…".
+
+// var aadhaarNum = “535067543542”;
+
+// vs
+
+// var aadhaarNum = 535067543542;
+
+// Give a task to create a variable of their name, age, and gender on replit.
+// Conclusion
+// Understanding JavaScript variables is fundamental for writing effective and organized code. Variables serve as containers for storing and manipulating data, allowing developers to create dynamic and interactive applications. By grasping concepts like variable declaration, scoping, and naming conventions, developers can efficiently manage data throughout their programs.
+
+// Resources - Official Documentation and Other Resources
+// MDN Web Docs: JavaScript
+// JavaScript.info
+// W3Schools JavaScript Tutorial
+// Datatype:
+// Introduction
+// Understanding data types is fundamental in programming as it defines the type of data a variable can hold and the operations that can be performed on it. JavaScript, like many programming languages, supports various data types to represent different kinds of information.
+
+// Detailed Explanation
+// What is the concept?
+// Data types in JavaScript categorize values and determine their behavior.
+// Why is it useful?
+// Data types enable developers to manipulate and process data accurately and efficiently.
+// Real-world examples or analogies
+// In a library system, books can be categorized into different genres (fiction, non-fiction) similar to how data types categorize values.
+// Code Implementation | Examples
+// Untitled 8.png
+
+// As we discussed earlier, variables are like boxes/containers. Above are three containers - What type of things will we store in the pencil holder? What type of things will we store in a water bottle? Can you store milk in a basket or can you use a bottle to store fruits?
+
+// We are using different types of containers to store different things. While the bottle can hold milk or water or juice, it will hold only liquids. Similarly, a variable of type *string* (like the variable - *custName*), can store only strings and a variable of type number (like the variable - *custAge)* can store only numbers.
+
+// The type of data a variable can hold is called its **Data type**. It may be number, string, boolean, etc. (A variable of type Boolean can either be *True* or *False)*
+// Untitled 9.png
+
+// Strings & Numbers
+// Untitled 10.png
+
+// Untitled 11.png
+
+// Untitled 12.png
+
+// Untitled 13.png
+
+// How to declare a variable?
+// Untitled 14.png
+
+// In javascript, the variable is declared is as follows
+// var x = 2;
+// var y = "masai";
+// var z = 4.5 ;
+// Variable Naming Rules
+// Name can begin with $ and _ characters.
+// You should not use any of the JavaScript reserved keywords as a variable name.
+// JavaScript variable names should not start with a numeral (0-9).
+// JavaScript variable names are case-sensitive.
+// Variable name should not be a keyword
+// How to print?
+// To know What is present inside the box, we need to do console.log() .
+// typeof
+// Tells about data type of the variable.
+
+
+var name = "mohan";
+var age = 25;
+
+console.log(typeof(name));
+console.log(typeof(age));
+
+// Student Activities
+// One common example could be: Aadhaar card number. Its full of numbers but their “numerical value” is not how its used. We dont say my Aadhaar number is "5 billion, 350 million …." We say its "5350…".
+
+// var aadhaarNum = “535067543542”;
+
+// vs
+
+// var aadhaarNum = 535067543542;
+
+// Conditional Statements & Operators in JS
+// Truthy and Falsy values
+// MDN- truthy
+
+// MDN- falsy
+
+// The values that can be assigned to a variable can be classified into primitive vs non-primitive categories. They can also be classified as truthy vs falsy values.
+
+// 💡 There are only six ***falsy*** values in JavaScript: `undefined` , `null` , `NaN` , `0` , `""` (empty string), and `false`. Anything that is not falsy it truthy.
+// Conditional Statements
+// conditional statements and relate it to the daily life
+// Untitled.png
+
+// Conditional statements are used to decide the flow of execution based on different conditions. If a condition is true, you can perform one action and if the condition is false, you can perform another action.
+// Through Conditional Statements, we can control which code needs to run or which code will not run.
+// Untitled 1.png
+
+// Code runs based on certain conditions.
+// For Eg: let's understand with the analogy, the traffic light controls the flow of vehicles on the road. Depending upon the colour of light, the actions happened. If light is green , then it is a signal to move whereas if the light is red then it is a signal to stop.
+// Based on the comparison , if the comparison is true then it will execute the one block of code otherwise another block of code.
+// Different Types of Conditional Statements
+// types of conditional Statements
+// There are mainly three types of conditional statements in JavaScript.
+
+// If statement
+// If…Else statement
+// If…Else If…Else statement
+// if Statement
+// if statement with examples
+// Untitled 2.png
+
+// Untitled 3.png
+
+// It is to specify a block of JavaScript code to be executed if a condition is true.
+// Syntax
+// condition
+
+// block of code to be executed if the condition is true
+
+// if()
+
+// It takes a Boolean Value or the expression that will give boolean value.
+// if() { }
+
+// { } known as code block.
+// Understand the if statement with 3 scenarios : with Boolean Value, with Expression and with Variables
+// a) If with Boolean Value
+
+
+console.log("Code Start")
+        if(true) {
+          console.log("Inside Code")
+        }
+console.log("Code End")
+
+// b) If with Expression
+// The decision is based on the value of Expression
+// For Example :
+
+if(5>3){
+       console.log("Inside Code");
+  }
+
+// c) If with Variables
+// The decision is based on the value of Expression
+// For Example :
+
+var name1 = "rahul";
+var name2 = "rahul";
+var check = (name1==name2);
+
+if(check){
+   console.log("Both Names are same");
+}
+
+// Code 1 : Check Whether two numbers are equal
+// Student Task : Task For Students
+
+var a = 2;
+var b = 3;
+var c = (a==b);
+
+if(c)
+{
+    console.log("a and b are equal");
+}
+
+// if/else Statement
+// if/else statements with real life example
+// Untitled 4.png
+
+// The if...else is a type of conditional statement that will execute a block of code when the condition in the if statement is truthy. If the condition is falsy, then the else the block will be executed.
+// Here is a list of falsy values:
+// false
+// 0 (zero)
+// 0 (negative zero)
+// 0n (BigInt zero)
+// "", '', ```` (empty string)
+// null
+// undefined
+// NaN (not a number)
+// If the condition is true, then one block of code executes.
+// Else another block of code executes.
+// Syntax
+// condition
+
+// block of code to be executed if the condition is true
+
+// block of code to be executed if the condition is false
+
+// Code 2 : Check which number is greater
+
+var a = 3;
+var b = 20;
+
+if(a>b)
+{
+  console.log("a is greater");
+}
+else
+{
+  console.log("a is not greater");
+}
+
+// Code 3 : Check Whether two names are equal or not
+// Student Task : Task For Students
+
+
+var name1 = "suraj";
+var name2 = "suraj";
+
+if(name1==name2)
+{
+  console.log("Names are Equal");
+}
+else
+{
+  console.log("Names are not equal");
+}
+
+
+// Hotel Bill Discount
+// Understanding if-else with Hotel Bill Example
+// Untitled 5.png
+
+// Code 4 :
+
+// Student Task : Task For Students
+// Given total_bill, discount_start_price if you satisfy the condition Print Discount Availaible Otherwise print No Discount
+
+var total_bill = 699;
+var discount_start_price = 500;
+
+if(total_bill>=discount_start_price){
+  console.log("Discount Availaible");
+}
+else{
+  console.log("No discount");
+}
+
+// Else-if Statement
+// Instructor Task (5 mins): Discuss Else-if Statement with Real-life examples
+// Untitled 6.png
+
+// There will be times where you want to test multiple conditions. That is where the else if the block comes in.
+// When the if statement is false, the computer will move onto the else if statement. If that is also false, then it will move onto the else block.
+// Syntax
+// condition1
+
+// block of code to be executed if condition1 is true
+
+// condition2
+
+// block of code to be executed if the condition1 is false and condition2 is true
+
+// block of code to be executed if the condition1 is false and condition2 is false
+
+// Bill and Discount
+// Problem Statement: According to the total_bill, the discount will be applied.
+
+// Apply the follwoing discounts as per the total bill
+
+// 10% if total bill is greater than rs.500/-
+// 20% if total bill is greater than rs.1000/-
+// No discount for Others.
+// Code 5 : For a Restaurant, write the program for the following total_bill > 500 Then print 10% discount total_bill > 1000 Then print 20% discount Otherise No discount
+
+var total_bill = 799;
+
+if(total_bill > 1000)
+{
+  console.log("20 % discount");
+}
+else if(total_bill > 500)
+{
+  console.log("10 % discount");
+}
+else
+{
+  console.log("No discount");
+}
+
+
+// If-Else-If vs if-if-if :
+// Instructor Task
+// Code 6 : If-Else-If
+
+// *My mother told me to get any one of the thing from the market
+// If Rice is availaible then print Buy rice
+// Else If wheat is availaible then print buy wheat
+// Else If apple is availaible then print buy apple**
+
+var rice_availaible = false ;
+var wheat_availaible = true;
+var apple_availaible = true;
+
+if(rice_availaible)
+{
+  console.log("Buy rice");
+}
+else if(wheat_availaible)
+{
+  console.log("Buy Wheat");
+}
+else if(apple_availaible)
+{
+  console.log("Buy apple");
+}
+else
+{
+  console.log("Nothing is availaible");
+}
+
+// Code 7 :  If - If - If
+
+// *My mother told me to get all of the thing if available from the market
+// If Rice is available then print Buy rice
+// If wheat is available then print buy wheat
+// If apple is available then print buy apple**
+
+var rice_available = true ;
+var wheat_available = true;
+var apple_available = false;
+
+if(rice_available)
+{
+  console.log("Buy rice");
+}
+
+if(wheat_available)
+{
+  console.log("Buy Wheat");
+}
+
+if(apple_available)
+{
+  console.log("Buy apple");
+}
+
+
+// Logical Operators
+// What is Logical operators.
+// A logical operator is a symbol or word used to connect two or more expressions.
+// The logical operators are important in JavaScript because they allow you to compare variables and do something based on the result of that comparison.
+// For example, if the result of the comparison is true, you perform a block of code; if it’s false, you perform another block of code.
+// Whenever we need to connect two statements.
+
+// In the Last class we learn about conditional statements, that says that if one condition is true then do X otherwise do Y.
+
+// For Example: In traffic lights , If the lights are green then Move and if the lights are red then Stop.
+
+// But In real, there might be multiple condition on which some result depends.
+
+// Types of Logical Operators
+// JavaScript provides three logical operators:
+
+// && (Logical AND)(Checks first falsey value and return it otherwise return last truthy value )
+// || (Logical OR) (Checks first truthy value and return it otherwise return falsey value)
+// ! (Logical NOT)
+// Logical AND Operator (&&)
+// Logical AND operator with some examples
+// In a chain of &&s, each value will be evaluated from left to right. If any of these values happen to be falsy, that value will be returned and the chain will not continue.
+
+// Untitled 7.png
+
+// For Example: Suppose I need to submit some documents in Masai, and the documents are pan card and License Id, then only I will get the admission.
+// here, you can observe that I will only get the admission only when I have the PAN Card and License Id (Both are important).
+
+// Another Example: Suppose if one goes for a police selection, they check for height and weight right. We need both the parameters to get selected.
+// Similarly, we can have multiple condition on which , the result is dependent.
+
+// Our Boolean operators takes the input values as boolean and produce the result in boolean.
+// In programming, we use to denote the AND operator like in this way &&.
+// Input (Boolean Value) ——&&-—> Output (Boolean Value)
+// Code 1 : AND Operator
+
+var a = true;
+var b = true;
+
+var c = a && b;
+console.log(c);
+
+a = true;
+b = false;
+console.log(a&&b);
+
+a = false;
+b = true;
+console.log(a&&b);
+
+a = false;
+b = false;
+console.log(a&&b);
+
+// Code 2 : AND with numbers
+
+var a = 5>3;
+var b = 6>3;
+
+var c = a && b;
+console.log(c);
+
+// Code 3 : if/else
+
+// Ist Part : Without AND
+
+if(5>3)
+{
+	if(6>3)
+	{
+		console.log("Both are true");
+	}
+}
+
+// IInd Part : With AND
+
+if(5>3 && 6>3)
+{
+	console.log("Both are true");
+}
+
+
+
+
+// Code 4 : Combination of multiple statements
+
+// Try out on Console
+
+(5<4) && (3>1) && (2>1) && (4<1)
+
+
+// Student Task (5 mins): Solve the following problem
+// Code 5 : [Student Task] Check whether Rahul passed or not
+
+// For English Subject, Check whether Rahul passed or not
+
+var subject = "english";
+var passing_marks = 70;
+
+var rahul_marks = 75;
+var rahul_subject = "english";
+
+if((rahul_subject == subject) && (rahul_marks >= passing_marks))
+{
+	console.log("Rahul Passed");
+}
+else
+{
+	console.log("Rahul not passed");
+}
+
+
+// Code 7 : Differentiate between ,(coma) and +
+
+var a = 2;
+var b = 3;
+var c = "hello";
+
+console.log(a,b,c);
+console.log(a+b+c);
+
+// Case 2 : Integers
+var a = 2;
+var b = 3;
+console.log(a+b);
+console.log(a,b);
+
+// Case 3 : Strings
+var a = "Hello";
+var b = "World";
+
+console.log(a+b);
+
+// Case 4 : Integer with Strings
+var a = 2;
+var b = "hello";
+
+console.log(a,b);
+console.log(a+b);
+
+
+// Logical OR Operator (||)
+// The || operator behaves exactly like the && does, only in reverse! While a chain of &&s will break if a falsy value is found, a chain of ||s will break when it finds a  truthy value. And, just like with the &&s, if there are no truthy values and the end of the chain is reached, the last value in that chain is returned.
+
+// If any of the statement is true , then the result will be true
+
+// Untitled 8.png
+
+// For Example : DriveZy is a Renting bike service Startup, If you want to rent a bike then you need to submit any of the Identity Document
+
+// Aadhar Card or PAN Card or VoterId or License
+
+// Driver-1, AdharCard - ❌ PAN Card - ✅
+// Driver-2, AdharCard - ✅ PAN Card - ❌ and many more cases are possible
+// Observation :
+
+// If any of the case is true then the final result will be true.
+// If all the cases are false, then only the result will be false.
+// For Example : Masai ask for documents After Msat in the documentation phase, either submit the 12th Mark Sheet or Diploma
+
+// Student-1, Diploma - ✅ 12th Marks Card - ❌
+// Student-2, Diploma - ❌ 12th Marks Card - ✅
+// Code 9 : OR Operator
+
+var a = true;
+var b = true;
+
+var c = a || b;
+console.log(c);
+
+a = true;
+b = false;
+console.log(a||b);
+
+a = false;
+b = true;
+console.log(a||b);
+
+a = false;
+b = false;
+console.log(a||b);
+
+// Student Task (5 mins): What is the output of the following
+// Code 10 : [Student Task ] OR Operator
+
+// true || false || true
+// false || true || false
+// false || false || true
+// Logical NOT Operator (!)
+// Untitled 9.png
+
+// The boolean NOT operator is represented with an exclamation sign !.
+
+// The operator accepts a single argument and converts it into a boolean and then it inverses the output.
+
+// Take an example of watching a movie on your laptop and you want to sit under a fan since it’s very hottt. There are 2 switches for a fan, say. Initially both the switches are off. Now, you on SwitchA, the fan runs. Then , start watching the movie. Now, you the movie is finally finished or you want to go out with a friend. So, you shut down your laptop and Switch B is close to you, so you click the Switch B on but the fan stops running. So, the action you’re doing for Switch B is true but the fan stops running, i.e , the output is false.
+
+// On applying to a boolean value, the not operator turns true to false and false to true.
+
+// Untitled 10.png
+
+// For Example :
+
+// For any website, there are multiple roles
+
+// Admin
+// User
+// var admin_access = false; if(!admin_access){ console.log("Access Denied"); } else{ console.log("Welcome"); }
+
+// The precedence of NOT ! is the highest of all logical operators, so it always executes first, before && or | |.
+
+// IW Assignment
+// IW assignment means I WE Assignment , here we solve some question in the class . So, that student will get comfortable with the problems.
+// In this IW Assignment, we will take some problems and work on the solution together with students
+// Problem 1: If the number is divisible by 3, print a "multiple of 3".
+
+var number = 16;
+var remainder = number % 3;
+
+if(remainder == 0)
+{
+  console.log("Multiple of 3");
+}
+else
+{
+  console.log("Not multiple of 3");
+}
+
+
+// Problem 2: If a person is allowed to drive in India print "Apply for a license" or "NA".
+
+var yob = 1996;
+var age = 2021-yob;
+
+console.log(age);
+if(age >= 18){
+  console.log("Can Apply for license");
+}
+else{
+  console.log("NA");
+}
+
+
+// while loop
+// student task1- Link
+
+// solution- Link
+
+// Untitled.png
+
+// Song Library
+// Untitled 1.png
+
+// On Internet, When we listen to a song. There is an option of listening to the song in the loop, it will play the song again and again when it reaches to end.
+
+// Guests
+// Untitled 2.png
+
+// There are 10 guests coming to my home, After 2-3 days they decided to leave their home.
+// They all have the train on the same day and at the same time.
+// I need to drop them at the railway station but I have one bike which can only take one person at a time.
+// In this case, I need to drop each guest one by one.
+// Taking the First guest to the railway station, dropping them off, and arriving back and following the same procedure again and again till the end.
+// While Loop
+// The while loop begins with a condition and it is written similarly to an if statement. The inner parenthesis is the condition.
+// As long as the condition is true, it will continue to execute the statement(s).
+// To stop the loop, the condition must eventually become false.
+// A common condition is to have a variable be less than or greater than compared to a number.
+// Within the statements, that variable will be incremented or decremented depending on the condition.
+// Each time the loop is executed, the variable will change and eventually become larger or less than the number in the condition, stopping the loop.
+// Let's try to understand the Loop Variables: Marathon Analogy
+// Untitled 3.png
+
+// Case 1 : Given a track of 100 m, Hari trains himself for a long Marathon of 100 meter. Hari standing at the 0th position and he needs to cover a 100-meter distance.
+
+// Hari will make 1-meter jump at a time. Let's take Hari's position as position = 0 After 1st jump, Hari will be at position = 1 meter After 2nd jump, Hari will be at position = 2 meter ............................................................ After the 100th jump, Hari will be at position = 100 meter
+
+// Observation
+
+// Untitled 4.png
+
+// the value of position is going as follows position = 0,1,2,3......100
+
+// The initial value of position = 0
+// The loop is running till position ≤ 100
+// At every point, Hari is making a jump of 1
+// For Loops, 3 things are important :
+
+// Starting Point: position = 0
+// How long jump: Jump of 1 meter
+// Till When: position≤100 meter Syntax of While Loop
+// Syntax of While Loop
+
+// Untitled 5.png
+
+// Starting Point
+
+
+
+
+// While ( Till When )
+// {
+// How long Jump at a time?
+// }
+// -------------------------------------------------------------------------
+// Initialization
+// While ( Condition )
+// {
+// Increment/Decrement
+// }
+// var position = 0;
+// while (position <= 100) {
+//   position = position + 1;
+// }
+
+
+
+
+
+
+
+
+// Untitled 6.png
+
+// Untitled_(10).png
+
+// Understanding DRY RUN
+
+var i = 0;
+while (i <= 5) {
+  console.log("hello");
+  i = i + 1;
+}
+
+
+
+// Untitled 7.png
+
+// While Loop Examples
+// Code 1: Loop from 1 to 100 [1-meter] jump at a time
+
+var position = 0;
+while (position <= 100) {
+  position = position + 1;
+  console.log("Current Position ", position);
+}
+
+
+// Untitled 8.png
+
+// Code 2: Infinite Loop
+
+while (true) {
+  console.log("Hello Masai");
+}
+// Code 3: Loop from 1 to 100 [2-meter jump at a time ]
+
+var position = 0;
+while (position < 100) {
+  console.log("Current Position ", position);
+  position = position + 2;
+}
+
+
+
+// Student Task
+// Code 4: Loop from 1 to 100 [15-meter jump at a time ]
+
+var position = 0;
+while (position < 100) {
+  console.log("Current Position", position);
+  position = position + 15;
+}
+
+
+// Note : != and < behave differently
+
+// Code 5: Loop from 35 to 100 [ 3 units jump at a time ]
+
+var position = 35;
+while (position < 100) {
+  console.log("Current Position", position);
+  position = position + 3;
+}
+
+
+// Code 6: Reverse Loop from 100 to 0 [ 1 unit jump at a time ]
+
+var position = 100;
+while (position >= 0) {
+  console.log("Current Position", position);
+  position = position - 1;
+}
+
+
+// Sending Notice to 1000 Employees
+// Untitled 9.png
+
+// Break
+// Guest Analogy
+
+// There are 10 guests coming to my home, After 2-3 days they decided to leave their home.
+// They all have the train on the same day and at the same time.
+// I need to drop them at the railway station but I have one bike which can only take one person at a time.
+// In this case, I need to drop each guest one by one.
+// Taking the First guest to the railway station, dropping them off, and arriving back and following the same procedure again and again till the end. Suppose I took the First Guest and dropped him to the Railway station and come back.
+// Again I took the Second Guest and followed the same.
+// Next, I took the third guest to the Railway station and found that the Train had gone.
+// So, Will I continue the above procedure or stop it?
+
+// Obviously, I will stop it and wait for tomorrow.
+
+// Code 7: Loop from 0 to 10 (using break)
+
+var guest = 0;
+while (guest <= 10) {
+  console.log("Guest", guest);
+  if (guest == 3) {
+    break;
+  }
+  guest++;
+}
+
+
+// Student Task
+// Code 8: Predict the output
+
+var count = 0;
+while (true) {
+  console.log("Hello");
+  count++;
+  ++count;
+  if (count > 5) {
+    break;
+  }
+  count--;
+}
+
+
+// Continue
+// Guest Analogy
+
+// There are 10 guests coming to my home, After 2-3 days they decided to leave their home.
+// They all have the train on the same day and at the same time.
+// I need to drop them at the railway station but I have one bike which can only take one person at a time.
+// In this case, I need to drop each guest one by one.
+// Taking the First guest to the railway station, dropping them off, and arriving back and following the same procedure again and again till the end.
+// Suppose I took the First Guest and dropped him to the Railway station and come back.
+// Again I took the Second Guest and followed the same.
+// Suppose the third guest is Sick, In that case, I will skip him.
+// and I will continue with the fourth guest and follow the same procedure.
+// Code 11: Loop from 0 to 10 (using continue)
+
+var guest = 0;
+while (guest <= 10) {
+  if (guest == 3) {
+    guest++;
+    continue;
+  }
+  console.log("Guest", guest);
+  guest++;
+}
+
+
+// Code 12: Find a Sum of 1 to 10
+
+// **Problem** :
+// Sum of 1 to 10
+// 1 + 2 + 3....... + 10
+var i = 1;
+var sum = 0;
+while(i<=10)
+{
+sum = sum+i;
+i++;
+}
+console.log(sum);
+// For Loop
+// Student task2: Link
+
+// solution: link
+
+// Untitled.png
+
+// Let’s say you want to display Masala Dosa one time then you will print the console.log("Masala Dosa") one time.
+// Similarly, If it is two then you will write console.log twice
+// Let’s say you want to display it 100 times. Without some sort of loop in your code, we would probably have to write the same line of code 100 times.
+// A for-loop can help us to do so by running the same code repeatedly under certain conditions.
+
+// Syntax
+
+// Untitled 1.png
+
+// Initialization: Decides the starting point of a loop
+// Condition: Condition is checked before the execution of every iteration. If it evaluates to true, the loop’s statement is executed. If it evaluates to false, the loop stops.
+// Iteration: Iteration is used to affect your counter. It can be increment/decrement.
+// Loop Body: The loop body repeats the code as long as the condition part is TRUE.
+// Three Ways of Writing For Loop
+// for (initialize; condition; increment);
+// for (initialize; condition; increment) single statement;
+// for (initialize; condition; increment) { multiple; statements;}
+// Comparing For Loop Vs While Loop
+// Untitled 2.png
+
+// The sequence of Execution of For Loop
+// Untitled 3.png
+
+// Initialization -> Condition -> Loop Body -> Iteration -> Condition -> Loop Body -> Iteration and so one
+// Initialization is denoted as 1, Condition denoted as 2, Loop Body is denoted as 3, Iteration denoted as 4.
+// Sequence of Execution will be : 1 -> 2 -> 3 -> 4 -> 2-> 3 -> 4 -> 2 -> 3 -> 4 and so on
+// Examples of For Loop with Dry Run
+// Example 1: Print Hello 5 times.
+
+for (var i = 0; i < 5; i++) {
+  console.log("Hello");
+}
+
+// Untitled 4.png
+
+// Example 2: Print Values from 1 to 5
+
+// Ist way : Output on new line
+for (var i = 1; i <= 5; i++) {
+  console.log(i);
+}
+// IInd way: Output on a single line
+var bag = "";
+for (var i = 1; i <= 5; i++) {
+  bag = bag + i + " ";
+}
+console.log(bag);
+
+
+// Untitled 5.png
+
+// Example 3: Print multiple of 2 values from 1 to 10
+
+// Ist way : Output on new line
+
+
+for (var i = 1; i <= 10; i = i * 2) {
+  console.log(i);
+}
+// IInd way : Output on single line
+var bag = "";
+for (var i = 1; i <= 10; i = i * 2) {
+  bag = bag + i + " ";
+}
+console.log(bag);
+
+
+// Untitled 6.png
+
+// Example 4: Reverse Loop from 5 to 1
+
+var bag = "";
+for (var i = 5; i > 0; i--) {
+  bag = bag + i + " ";
+}
+console.log(bag);
+
+
+// Untitled 7.png
+
+// Example 5: Factorial
+
+var fact = 1;
+for (var i = 1; i <= 5; i++) {
+  fact = fact * i;
+  console.log(fact);
+}
+
+
+// Untitled 8.png
+
+// Example 6: Find Sum 1 to N
+
+var N = 5;
+var sum = 0;
+for (var i = 1; i <= N; i++) {
+  sum = sum + i;
+}
+console.log(sum);
+
+// Untitled 9.png
+
+// Break
+// Guest Analogy
+
+// There were 10 guests who came to my home, After 2-3 days they decided to leave.
+// They all have the train on the same day and at the same time.
+// I need to drop them at the railway station but I have one bike which can only take one person at a time.
+// In this case, I need to drop each guest one by one.
+// Taking the First guest to the railway station, dropping them off, and arriving back and following the same procedure again and again till the end.
+// Suppose I took the First Guest and dropped him to the Railway station and come back.
+// Again I took the Second Guest and followed the same.
+// Now, I took the third guest to the Railway station and found that the Train had gone.
+// So, Will I continue the above procedure or stop it?
+
+// Obviously, I will stop it and wait for tomorrow
+
+// Code 7 : Loop from 1 to 10 (using break). Using console.log before break statement
+
+for (var guest = 1; guest <= 10; guest++) {
+  console.log("guest ", guest, "got the train");
+  if (guest == 3) {
+    break;
+  }
+}
+
+// Code 8 : Loop from 1 to 10 (using break). Using console.log after break statement
+
+for (var guest = 1; guest <= 10; guest++) {
+  if (guest == 3) {
+    break;
+  }
+  console.log("guest ", guest, "got the train");
+}
+
+// Continue
+// Guest Analogy
+
+// There are 10 guests coming to my home, After 2-3 days they decided to leave their home.
+// They all have the train on the same day and at the same time.
+// I need to drop them at the railway station but I have one bike which can only take one person at a time.
+// In this case, I need to drop each guest one by one.
+// Taking the First guest to the railway station, dropping them off, and arriving back and following the same procedure again and again till the end.
+// Suppose I took the First Guest and dropped him to the Railway station and come back.
+// Again I took the Second Guest and followed the same.
+// Suppose the third guest is Sick, In that case, I will skip him.
+// and I will continue with the fourth guest and follow the same procedure.
+// Code 9: Loop from 1 to 10 (using Continue). Using console.log before continue statement
+
+for (var guest = 1; guest <= 10; guest++) {
+  console.log("guest ", guest, "got the train");
+  if (guest == 3) {
+    continue;
+  }
+}
+
+
+// Code 10: Loop from 1 to 10 (using Continue). Using console.log after continue statement
+
+for (var guest = 1; guest <= 10; guest++) {
+  if (guest == 3) {
+    continue;
+  }
+  console.log("guest ", guest, "got the train");
+}
+// Code 11: Predict the output.
+
+var count = 1;
+for (var i = 1; i < 10; i++) {
+  count++;
+  if (i == 5) {
+    continue;
+  }
+}
+console.log(count);
+
+// Code 12: Predict the output.
+
+var count = 1;
+for (var i = 1; i < 10; i++) {
+  if (i == 5) {
+    continue;
+  }
+  count++;
+}
+console.log(count);
+
+
+// Data Type in JS
+// What types of values can be assigned to variables?
+// MDN- primitive
+
+// Primitives (value types)
+
+// string
+
+// number
+
+// boolean
+
+// undefined
+
+// null
+
+// bigInt
+
+// symbol
+
+// Non Primitives (reference types)
+
+// object
+
+// array
+
+// function
+
+// Untitled.png
+
+// Strings
+
+// The first type of data is a String. This is used to store a sequence of characters used to represent text. Example:
+
+var name = "Masai School";  //using double quotes
+var subject = 'Coding';     // using single quotes
+var val =`Hi`;              //  using template literal
+
+// Any data within " " ( Double quotes) or ' ' (Single quotes) or   (Template literal) is a String in JavaScript.
+
+// Numbers
+
+// The second type of data we want to know is a Number, which is used to store any kind of numbers. We have already seen this type of data in the variables example. Numbers can store both Whole Numbers/Integers and Decimals. Example:
+
+var num = 100
+var dec = 100.001
+Booleans
+
+// This data type has only two values true and false. Example:
+
+var x = true
+var y = false
+
+// Checking the type of data:
+// Let's say you have some data but you don't know what type it is. You can use the typeof() inbuilt code to find the type of the data.
+
+// Example:
+
+var name = "Masai School"
+console.log(typeof(name)) //output => string
+
+
+// undefined
+
+// undefined is js is a falsey value. A variable that has been declared but has not been assigned a value is said to have an "undefined" value. It essentially means the variable exists but lacks a meaningful value.
+
+var x; // Declares the variable x but leaves it undefined
+console.log(x); // This will output "undefined"
+
+
+// null
+
+// Null represents the intentional absence of any object value. It is often used to explicitly indicate that a variable should have no value or that an object property is empty.
+
+var y = null; // Assigns the value null to the variable y
+console.log(y); // This will output "null"
+
+
+// Untitled 1.png
+
+// Arrays
+// Introduction
+// How do we store information?
+// We use variables to store data, such as the name of a student. However, when dealing with multiple values, using individual variables for each is not efficient.
+
+// For example:
+
+
+var name1 = "Prateek";
+var name2 = "Nrupul";
+// ...and so on
+
+// To address this, we use arrays.
+
+// Arrays Basics
+// What is an Array?
+// An array is a contiguous chunk of memory that can store multiple values. It allows us to store and manage collections of data in a single variable.
+
+// Declaration of an array
+
+var arr = [];
+
+// Storing Names in an Array
+
+var namesArray = ["Prateek", "Nrupul", "Yogesh", "Aman", "Albert"];
+
+// Each value in the array is stored at an index, starting from 0.
+
+// Accessing Array Elements
+
+console.log(namesArray[0]); // Output: Prateek
+console.log(namesArray[1]); // Output: Nrupul
+// ...and so on
+
+// Problem Solving with Arrays
+// Array of Vegetables
+
+var vegetables = ["Tomato", "Beans", "Onion"];
+console.log(vegetables[0]); // Output: Tomato
+console.log(vegetables[1]); // Output: Beans
+console.log(vegetables[2]); // Output: Onion
+
+// Finding Array Length
+// Use the length property to determine how many elements are present in an array.
+
+// Find the length of the vegetables array.
+
+var vegetables = ["Tomato", "Beans", "Onion"];
+console.log(vegetables.length); // Output: 3
+
+// Print the price of the last product.
+
+var prices = [45, 71, 29];
+console.log(prices[prices.length - 1]); // Output: 29
+
+// Modifying Arrays
+// Adding Elements with push()
+
+var movies = [];
+movies.push("Bahuballi");
+movies.push("Avengers");
+movies.push("Spider Man");
+
+// Problem Solving with push()
+// Push 4 superheroes into the array
+
+var superheroes = [];
+superheroes.push("batman");
+superheroes.push("superman");
+superheroes.push("ironman");
+console.log(superheroes);
+
+// Updating Array Elements
+// Updating the first index value in an array:
+
+
+superheroes[0] = "Thor";
+
+// Looping Through Arrays
+// Print all elements of the array using a loop.
+
+var movies = ["batman", "superman", "ironman"];
+for (var i = 0; i < movies.length; i++) {
+  console.log(movies[i]);
+}
+
+// Print movies with actors
+
+var movies = ["bahuballi", "Spider Man", "Iron Man", "Super Man"];
+var actors = ["Prabhas", "Tom Holland", "Robert Downey", "Henry Cavill"];
+for (var i = 0; i < movies.length; i++) {
+  console.log(movies[i], " - ", actors[i]);
+}
+
+// Removing Elements
+// Using pop() to Remove Elements
+// Pop the last 2 elements from an array
+
+var movies = ["batman", "superman", "ironman"];
+movies.pop();
+movies.pop();
+console.log(movies);
+
+// Delete last 3 numbers from an array
+
+var numbers = [2, 3, 4, 5, 6, 7];
+numbers.pop();
+numbers.pop();
+numbers.pop();
+console.log(numbers);
+
+// or
+
+
+var numbers = [2, 3, 4, 5, 6, 7];
+for (var i = 1; i <= 3; i++) {
+  numbers.pop();
+}
+console.log(numbers);
+
+// Reversing an Array
+// To reverse the order of elements in an array, you can create a new array and iterate through the original array in reverse order.
+
+
+var fruits = ["apple", "banana", "orange", "grape"];
+var reversedFruits = [];
+
+for (var i = fruits.length - 1; i >= 0; i--) {
+  reversedFruits.push(fruits[i]);
+}
+
+console.log(reversedFruits); // Output: ["grape", "orange", "banana", "apple"]
+
+// Counting Even and Odd Elements
+// You can iterate through an array and count the number of even and odd elements without using inbuilt functions.
+
+
+var numbers = [2, 7, 6, 9, 14, 5];
+var evenCount = 0;
+var oddCount = 0;
+
+for (var i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 === 0) {
+    evenCount++;
+  } else {
+    oddCount++;
+  }
+}
+
+console.log("Even Count:", evenCount); // Output: 3
+console.log("Odd Count:", oddCount);   // Output: 3
+
+// Finding Maximum and Minimum Values
+// To find the maximum and minimum values in an array without using inbuilt functions:
+
+
+var scores = [87, 92, 78, 94, 89];
+var maxScore = scores[0];
+var minScore = scores[0];
+
+for (var i = 1; i < scores.length; i++) {
+  if (scores[i] > maxScore) {
+    maxScore = scores[i];
+  }
+
+  if (scores[i] < minScore) {
+    minScore = scores[i];
+  }
+}
+
+console.log("Maximum Score:", maxScore); // Output: 94
+console.log("Minimum Score:", minScore); // Output: 78
+
+// Arrays with Loop and Break
+// Code 12: Print the first 3 items in the array using a loop.
+
+// First Way
+var movies = ["bahuballi", "SpiderMan", "IronMan", "SuperMan"];
+for(var i = 1; i<=3; i++)
+{
+console.log(movies[i]);
+}
+
+// Second Way [ Using Break ]
+var movies = ["bahuballi", "SpiderMan", "IronMan", "SuperMan"];
+for(var i = 0; i<movies.length; i++)
+{
+if(i==3)
+{
+break;
+}
+console.log(movies[i]);
+}
+
+// Arrays with Loop and Continue
+// Code 12: Print all movies except the third movie.
+
+var movies = ["bahuballi", "SpiderMan", "IronMan", "SuperMan"];
+for(var i = 0; i<movies.length; i++)
+{
+if(i==2)
+{
+continue;
+}
+console.log(movies[i]);
+}
+
+// Code 13: Print all movies except the third and fifth movies.
+
+var movies = ["bahuballi", "SpiderMan", "IronMan", "SuperMan","hulk","thor"];
+for(var i = 0; i<movies.length; i++)
+{
+if(i==2 || i==4)
+{
+continue;
+}
+console.log(movies[i]);
+}
+
+// III
+// Strings Notes
+// Introduction
+// What are Strings?
+// In JavaScript, a string is a sequence of characters. Strings are used to represent text and are enclosed in either single ('') or double ("") quotes.
+
+
+var message = "Hello, World!";
+var name = 'John Doe';
+
+// String Operations
+// Concatenation
+// Concatenation is the process of combining strings.
+
+
+var firstName = "John";
+var lastName = "Doe";
+var fullName = firstName + " " + lastName;
+console.log(fullName); // Output: John Doe
+
+// String Length
+// To find the length of a string, use the length property.
+
+
+var greeting = "Hello, World!";
+console.log(greeting.length); // Output: 13
+
+// Accessing Characters
+// You can access individual characters in a string using their index.
+
+
+// var word = "JavaScript";
+console.log(word[0]); // Output: J
+console.log(word[4]); // Output: S
+
+// Immutable Nature of Strings
+// Strings in JavaScript are immutable, meaning their values cannot be changed after they are created. Any operation that seems to modify a string actually creates a new string.
+
+// Example
+
+var text = "Hello";
+text[0] = "C"; // This will not modify the string.
+console.log(text); // Output: Hello
+
+// Mutable Operations
+// String Concatenation
+// While strings are immutable, you can achieve a form of mutation through concatenation.
+
+
+var message = "Hello";
+message = message + ", World!";
+console.log(message); // Output: Hello, World!
+
+// String Methods
+// JavaScript provides various string methods that create new strings based on the original string.
+
+// Example: Uppercase and Lowercase
+
+var word = "JavaScript";
+var upperCaseWord = word.toUpperCase();
+var lowerCaseWord = word.toLowerCase();
+
+console.log(upperCaseWord); // Output: JAVASCRIPT
+console.log(lowerCaseWord); // Output: javascript
+
+// String Comparison
+// Equality Comparison
+// You can compare strings for equality using the === operator.
+
+
+var str1 = "Hello";
+var str2 = "Hello";
+console.log(str1 === str2); // Output: true
+
+// Inequality Comparison
+
+var str1 = "Hello";
+var str2 = "World";
+console.log(str1 !== str2); // Output: true
+
+// Reversing a String
+// Print the given string in reverse.
+
+let reversed = "";
+let input1 = "hello";
+for (let i = input1.length - 1; i >= 0; i--) {
+  reversed += input1[i];
+}
+console.log(reversed); // Expected Output: olleh
+
+reversed = "";
+let input2 = "JavaScript";
+for (let i = input2.length - 1; i >= 0; i--) {
+  reversed += input2[i];
+}
+console.log(reversed); // Expected Output: tpircSavaJ
+
+// Counting Vowels
+// Count the vowels in given string.
+
+let count = 0;
+let vowels = "aeiou";
+let inpup_1 = "programming";
+for (let i = 0; i < input1.length; i++) {
+  if (input1[i] === "a" || input1[i] === "e" || input1[i] === "i" || input1[i] === "o" || input1[i] === "u") {
+    count++;
+  }
+}
+console.log(count); // Expected Output: 2
+
+// Palindrome Check
+// Check palindrome in given string.
+
+let input_1 = "level";
+let reversed1 = "";
+for (let i = input1.length - 1; i >= 0; i--) {
+  reversed1 += input1[i];
+}
+console.log(input1 === reversed1); // Expected Output: true
+
+let input_2 = "hello";
+let reversed2 = "";
+for (let i = input2.length - 1; i >= 0; i--) {
+  reversed2 += input2[i];
+}
+console.log(input2 === reversed2); // Expected Output: false
+
+// Funtions
+// Functions and Inbuilt function:
+// Introduction
+// Functions are a fundamental concept in programming that allow developers to encapsulate reusable pieces of code to perform specific tasks. They play a crucial role in making code more modular, readable, and maintainable. In this set of notes, we explore the concept of functions, their usage, and the importance of documentation in understanding built-in functions.
+
+// Detailed Explanation
+// What is the concept? Functions in programming are blocks of code designed to perform a specific task. They encapsulate logic and can accept input parameters and return output. Functions can be invoked (called) multiple times, enabling code reusability and modularity.
+
+// Why is it useful? Functions offer several benefits:
+
+// Modularity: Code is organized into manageable chunks, enhancing readability and maintenance.
+// Reusability: Functions can be called multiple times, reducing code duplication.
+// Abstraction: Developers can focus on what a function does rather than how it's implemented, promoting a higher level of abstraction.
+// Scoping: Functions create their own scope, preventing naming conflicts and promoting encapsulation. Real-world examples or analogies Just like a recipe in a cookbook, functions contain a set of instructions to accomplish a specific task. Each time you bake a cake, you follow the same recipe, emphasizing the reusability aspect of functions. Similarly, in an organization, different departments handle specific tasks (functions), such as HR for hiring, Finance for budgeting, etc.
+// Suppose , we have wrote the code for calculating the sum of two numbers, calculating the difference of two numbers and calculating the multiplication of two numbers in single file.
+
+// When I execute the code file, all the three code will execute but What if I want only to run Addition code or subtraction code only.
+
+// I need some tool through which I able to control the different block of code.
+
+// For Example :
+
+// In Amazon , there are different functionalities implemented like Showing products, Adding/Deleting to cart, Orders, perform payments, etc.
+
+// Every functionalities was written separately.
+// In Instagram, there are different functionalities like posting the image, commenting , chatting, etc.
+
+// For each functionality, their individual code is written.
+// Those code execution depends upon the button you are hitting
+// Thus , we will going to understand HOW TO CONTROL OUR CODE ?
+
+// Therefore to achieve that we have something known as functions.
+
+// Code Implementation | Examples
+// Code 1 : Write three block of code :
+
+// print length of the name
+// Sum of two numbers
+// Multiplication of two numbers
+
+var name = "Shubham";
+console.log(name, name.length);
+
+var a = 3;
+var b = 5;
+var sum = a + b;
+console.log("Sum is ",sum);
+
+var x = 4;
+var y = 8;
+var multiply = x*y;
+console.log(x*y);
+
+// If I execute the above code, All the three code will get executed but I don’t want to run all the code
+
+// Code 2 : Write three functions of above :
+// printInfo()
+// sum()
+// multiply()
+
+function printInfo()
+{
+	var name = "Shubham";
+	console.log(name, name.length);
+}
+	
+function sum()
+{
+	var a = 3;
+	var b = 5;
+	var sum = a + b;
+	console.log("Sum is ",sum);
+}
+
+function multiply()
+{
+	var x = 4;
+	var y = 8;
+	var multiply = x*y;
+	console.log(x*y);
+}
+
+printInfo();
+sum();
+multiply(); 
+
+
+// Passing Value Using Parameters
+// Code 3 : Write 4 functions :
+
+// subtraction
+// division
+// modulus
+// addition
+
+function subtraction(x, y)
+{
+  var subtraction = x - y;
+
+  console.log(subtraction);
+}
+
+function division(e, c)
+{
+  var division = e/c;
+
+	console.log(division);
+}
+
+function modulus(t, q)
+{
+  var val = t%q;
+
+	console.log(val);
+}
+
+function addition(first,second)
+{
+  var third = 20;
+  var sum = first+second+third;
+
+  console.log(sum);
+}
+
+var a=2;
+var b=30;
+
+addition(a, b);
+subtraction(a, b);
+division(a, b);
+modulus(a, b);
+
+// Passing Value + Returning Value
+// Code 4 : Write 4 functions :
+
+// subtraction
+// division
+// modulus
+// addition
+
+function subtraction(x, y)
+{
+  var subtraction = x - y;
+
+  return subtraction;
+}
+
+function division(e, c)
+{
+  var division = e/c;
+
+	return division;
+}
+
+function modulus(t, q)
+{
+  var val = t%q;
+
+	return val;
+}
+
+function addition(first,second)
+{
+  var third = 20;
+  var sum = first+second+third;
+
+  return sum;
+}
+
+var a=2;
+var b=30;
+
+var output_1 = addition(a, b);
+console.log("Addition",output_1);
+
+var output_2 = subtraction(a, b);
+console.log("Subtraction",output_2);
+
+var output_3 = division(a, b);
+console.log("Division",output_3);
+
+var output_4 = modulus(a, b);
+console.log("Modulus",output_4);
+
+// Code 5 : Checking whether a number is even or not
+
+// // Checking whether a number is even or not
+
+function checkEven(n)
+{
+  if(n%2 == 0)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+
+var n = 6;
+var z = checkEven(n);
+
+if(z == true)
+{
+  console.log(n,"is even");
+}
+
+// Use of Return
+// The output of one function can be used as input for other.
+// The result of sum is acting as input for square function
+// Code 8
+
+function add(a,b)
+{
+  var sum = a+b;
+  return sum;
+}
+
+function square(x)
+{
+  var y = x*x;
+  return y;
+}
+
+var a = 5;
+var b=15;
+
+var sum = add(a,b);
+var sqr = square(sum);
+console.log(sqr);
+
+
+// Student Activities
+// Code 6 : Write 2 functions
+
+// sumOfN : Find sum from 1 to n
+// multiplyBy2 : multiple the value by 2
+
+function sumOfN(n)
+{
+  sum = 0;
+  for(i=1; i<=n; i++)
+  {
+    sum = sum + i;
+  }
+  console.log("Sum is ",sum);
+  
+  return sum;
+}
+
+function multiplyBy2(x)
+{
+  var output2 = x*2;
+  console.log(output2);
+}
+
+var n = 5;
+var output = sumOfN(n);
+multiplyBy2(output);
+
+
+// Code 7 : Write 2 functions
+
+// findSum : Find Sum of two numbers
+// findSquare : Square of a number
+
+function findSum(a,b)
+{
+  var sum ;
+  sum = a+b;
+  return sum;
+}
+
+function findsquare(x)
+{
+  var val;
+  val = x*x;
+  console.log("val is",val);
+}
+
+var a = 4;
+var b = 5;
+var z = findSum(a,b);
+console.log("z is ",z);
+findsquare(z);
+
+// Conclusion
+// Functions are integral to programming, offering modularity, reusability, and abstraction. By encapsulating logic into functions, developers can create more organized and maintainable codebases. Additionally, understanding built-in functions through proper documentation is crucial for leveraging them effectively in development projects.
+
+// Resources - Official Documentation and Other Resources
+// MDN Documentation on Functions
+// Local Scope vs Global Scope
+// Introduction
+// In programming, understanding variable scope is crucial. Two primary scopes exist: local scope and global scope. Local variables are confined to the scope of the function in which they are defined, while global variables can be accessed from anywhere in the program.
+
+// Detailed Explanation
+// What is the concept?
+// Variable scope refers to the accessibility and lifetime of variables within a program. Local scope pertains to variables defined within a specific function, while global scope encompasses variables declared outside of any function.
+
+// Why is it useful?
+// Understanding variable scope helps prevent unintended side effects and promotes modular, maintainable code. Local variables encapsulate data within functions, reducing the risk of unintentional modifications. Global variables allow data sharing across functions but require careful management to avoid conflicts.
+
+// Real-world examples or analogies
+// Imagine a toolbox (global scope) shared by multiple workers (functions). Each worker has their own set of tools (local scope) that they use independently. While they can access tools from the toolbox, modifying them affects everyone, so they primarily use their own tools to avoid conflicts.
+
+// Simple Rule :
+// local variable has a scope only to its function
+// Global Variables can be accessed by any one.
+// According to the below code, the orphan child treated as Global Variable can be accessed by any of the function , those variables which defined inside functions can only be accessed only from the function
+
+// Instructor Activity | Code Implementation | Examples
+// Code 9
+
+function kishorilal_Family()
+{
+  var kishori_son = "chunnu";
+  console.log(kishori_son);
+  orphan_child = "laalu";
+}
+
+function badrilal_Family()
+{
+  var badrilal_son = "hari om";
+}
+
+function rajeshram_Family()
+{
+  var rajeshram_son = "munnu";
+}
+
+var orphan_child = "billu";
+kishorilal_Family();
+
+console.log(orphan_child);
+
+
+// Inbuilt Function
+// What is Documentation ?
+// Why we need Documentation ?
+// How it is helpful ?
+// How to use it ?
+// Introduce MDN docs
+// Student Activities
+// Problem 1
+// //  Create a function to check if a number is Prime or Not
+
+function isPrime(num)
+{
+    var count = 0;
+    for(var i = 1; i<=num; i++)
+    {
+      if(num%i == 0)
+      {
+        count++;
+      }
+    }
+  
+
+    if(count==2)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+
+  }
+
+  var result = isPrime(5);
+  console.log(result);
+
+
+// Problem 2
+// // Use the above function to print the Primes from 2 to a given limit
+
+function isPrime(num)
+{
+    var count = 0;
+    for(var i = 1; i<=num; i++)
+    {
+      if(num%i == 0)
+      {
+        count++;
+      }
+    }
+  
+
+    if(count==2)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+
+  }
+
+var limit = 100;
+
+for(var i = 2; i<=limit; i++)
+{
+  var result = isPrime(i);
+  if(result == true)
+  {
+    console.log(i,"is prime");
+  }
+}
+// Problem 3
+// // Problem 3: Use the same function to print Non-Primes from 2 to a given limit
+
+function isPrime(num)
+{
+    var count = 0;
+    for(var i = 1; i<=num; i++)
+    {
+      if(num%i == 0)
+      {
+        count++;
+      }
+    }
+  
+
+    if(count==2)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+
+  }
+
+var limit = 100;
+
+for(var i = 2; i<=limit; i++)
+{
+  var result = isPrime(i);
+  if(result != true)
+  {
+    console.log(i,"is non prime");
+  }
+}
+
+// Problem 4
+// // Problem 4: Write a function to check if the char is a small case or not
+
+function isSmallCase(x)
+{
+  var lower = "abcdefghijklmnopqrstuvwxyz";
+
+  for(var i=0; i<lower.length; i++)
+  {
+    if(x == lower[i])
+    {
+      return true;
+    }
+    
+  }
+
+  return false;
+}
+
+var result = isSmallCase("C");
+console.log(result);
+
+
+// Problem 5
+// Write a function to replace spaces in a given string with -
+
+function modifyString(str)
+{
+  var output = "";
+
+  for(var i = 0; i<str.length; i++)
+  {
+    if(str[i] == " ")
+    {
+      output = output+"-";
+    }
+    else
+    {
+      output = str;
+    }
+  }
+
+  return output;
+}
+
+var str = "Masai School";
+console.log(modifyString(str));
+
+
+// Conclusion
+// Understanding local and global variable scope is essential for writing clean, efficient code. Local variables provide encapsulation and prevent unintended modifications, while global variables facilitate data sharing across functions. Proper management of variable scope enhances code readability and maintainability.
+
+// Resources - Official Documentation and Other Resources
+// MDN Web Docs: Variable Scope
+// MDN Web Docs: Inbuilt Functions
+// Important Interview Questions
+// What are functions in JavaScript, and why are they important in programming?
+// Explain the concept of local scope and global scope in JavaScript variables. How do they differ?
+// Why is it beneficial to use functions in programming? Discuss some advantages.
+// How do you define a function in JavaScript? Provide examples of both named and anonymous functions.
+// What is the difference between parameters and arguments in a function? Explain with examples.
+// Solutions :
+// Solution: Functions in JavaScript are blocks of reusable code designed to perform specific tasks. They are crucial in programming for promoting code modularity, reusability, and abstraction.
+
+// Solution: Local scope refers to variables defined within a specific function, accessible only within that function. Global scope includes variables declared outside of any function, accessible from anywhere in the program.
+
+// Solution: Functions offer benefits such as modularity, reusability, abstraction, and scoping. They help organize code into manageable chunks, prevent code duplication, and enhance maintainability.
+
+// Solution: Functions in JavaScript can be defined using the function keyword followed by the function name, parameters (if any), and function body. Examples: Named function:
+
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+
+// Anonymous function:
+
+var greet = function(name) {
+    console.log("Hello, " + name + "!");
+};
+
+// Solution: Parameters are placeholders in the function definition, while arguments are actual values passed to the function during invocation. Example of parameters:
+
+function add(x, y) {
+    return x + y;
+}
+
+// Example of arguments:
+
+var result = add(3, 5);
+
+</script>
+</html>
